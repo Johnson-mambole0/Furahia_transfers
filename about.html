@@ -3,908 +3,637 @@
 <head>
 <meta charset="UTF-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-<title>FURAHIA TRANSFER — About Us | Our Story, Mission & Values</title>
+<title>FURAHIA TRANSFER GROUP — About Us</title>
 <link rel="preconnect" href="https://fonts.googleapis.com"/>
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600&family=DM+Sans:wght@300;400;500;600&family=Barlow+Condensed:wght@400;500;600;700&display=swap" rel="stylesheet"/>
-<style>
-  :root {
-    --black: #080808;
-    --deep: #0c1118;
-    --navy: #0b1c30;
-    --gold: #c8a84b;
-    --gold-light: #e2c06a;
-    --gold-dim: rgba(200,168,75,0.12);
-    --white: #f4f2ee;
-    --grey: #7a7a7a;
-    --border: rgba(200,168,75,0.18);
-    --border-soft: rgba(255,255,255,0.06);
-    --glass: rgba(8,10,14,0.72);
-    --font-display: 'Cormorant Garamond', serif;
-    --font-body: 'DM Sans', sans-serif;
-    --font-cond: 'Barlow Condensed', sans-serif;
-    --shadow-dark: 0 20px 60px rgba(0,0,0,0.6);
+<style>  :root {
+    --bg:         #F9F7F2;
+    --bg-alt:     #EDE8DF;
+    --card:       #F4F0E8;
+    --text:       #3E2723;
+    --text-muted: #6B5851;
+    --accent:     #C05A35;
+    --accent-hover:#F2B138;
+    --link:       #5E7D67;
+    --footer-bg:  #3E2723;
+    --footer-text:#F9F7F2;
+    --border:     rgba(62,39,35,0.14);
+    --border-soft:rgba(62,39,35,0.08);
+    --glass:      rgba(249,247,242,0.88);
+    --shadow:     0 4px 24px rgba(62,39,35,0.12);
+    --shadow-lg:  0 12px 48px rgba(62,39,35,0.18);
     --transition: 0.35s cubic-bezier(0.4,0,0.2,1);
+    --font-display:'Cormorant Garamond',serif;
+    --font-body:   'DM Sans',sans-serif;
+    --font-cond:   'Barlow Condensed',sans-serif;
+    --black:      #F4F0E8;
+    --deep:       #F9F7F2;
+    --navy:       #EDE8DF;
+    --gold:       #C05A35;
+    --gold-light: #F2B138;
+    --gold-dim:   rgba(192,90,53,0.10);
+    --white:      #F9F7F2;
+    --grey:       #6B5851;
+    --shadow-dark:0 12px 48px rgba(62,39,35,0.18);
+    --shadow-gold:0 8px 32px rgba(192,90,53,0.18);
   }
   *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
   html{scroll-behavior:smooth}
-  body{background:var(--deep);color:var(--white);font-family:var(--font-body);overflow-x:hidden;-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility}
+  body{background:var(--bg);color:var(--text);font-family:var(--font-body);overflow-x:hidden;-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility}
 
-  /* ── NAV ── */
-  nav{position:fixed;top:0;width:100%;z-index:100;display:flex;align-items:center;justify-content:space-between;padding:0 60px;height:76px;background:var(--glass);backdrop-filter:blur(28px) saturate(180%);-webkit-backdrop-filter:blur(28px) saturate(180%);border-bottom:1px solid var(--border-soft);transition:background var(--transition),box-shadow var(--transition)}
-  nav.scrolled{background:rgba(5,7,10,0.97);box-shadow:0 1px 0 var(--border),var(--shadow-dark)}
-  .nav-logo{display:flex;align-items:center;gap:14px;text-decoration:none}
-  .nav-logo-icon{width:42px;height:42px;border:2px solid var(--gold);display:flex;align-items:center;justify-content:center}
-  .nav-logo-icon svg{width:22px;height:22px;fill:var(--gold)}
-  .nav-logo-text{font-family:var(--font-cond);font-size:16px;letter-spacing:3px;color:var(--white);font-weight:600}
-  .nav-logo-sub{font-family:var(--font-cond);font-size:9px;letter-spacing:4px;color:var(--gold);font-weight:400;display:block;margin-top:-2px}
+  nav{position:fixed;top:0;width:100%;z-index:100;display:flex;align-items:center;justify-content:space-between;padding:0 60px;height:76px;background:var(--glass);backdrop-filter:blur(28px) saturate(160%);-webkit-backdrop-filter:blur(28px) saturate(160%);border-bottom:1px solid var(--border);box-shadow:var(--shadow);transition:background var(--transition),box-shadow var(--transition)}
+  nav.scrolled{background: rgba(249,247,242,0.98);box-shadow:0 2px 0 var(--border),var(--shadow)}
+  .nav-logo{display:flex;align-items:center;text-decoration:none}
+  .nav-logo img{height:52px;width:auto;display:block}
   .nav-links{display:flex;align-items:center;gap:36px;list-style:none}
-  .nav-links a{font-family:var(--font-cond);font-size:11.5px;letter-spacing:2.5px;color:var(--grey);text-decoration:none;text-transform:uppercase;transition:color var(--transition);position:relative;padding-bottom:4px}
-  .nav-links a::after{content:'';position:absolute;bottom:0;left:0;width:0;height:1px;background:var(--gold);transition:width var(--transition)}
+  .nav-links a{font-family:var(--font-cond);font-size:11.5px;letter-spacing:2.5px;color: var(--text-muted);text-decoration:none;text-transform:uppercase;transition:color var(--transition);position:relative;padding-bottom:4px}
+  .nav-links a::after{content:'';position:absolute;bottom:0;left:0;width:0;height:1px;background:var(--accent);transition:width var(--transition)}
   .nav-links a:hover::after,.nav-links a.active::after{width:100%}
-  .nav-links a:hover,.nav-links a.active{color:var(--gold)}
-  .nav-cta{font-family:var(--font-cond);font-size:11px;letter-spacing:2.5px;text-transform:uppercase;padding:10px 26px;border:1px solid var(--gold);color:var(--gold);background:transparent;cursor:pointer;text-decoration:none;transition:all var(--transition);position:relative;overflow:hidden}
-  .nav-cta::before{content:'';position:absolute;inset:0;background:linear-gradient(135deg,var(--gold),var(--gold-light));transform:scaleX(0);transform-origin:left;transition:transform var(--transition);z-index:0}
+  .nav-links a:hover,.nav-links a.active{color:var(--accent)}
+  .nav-cta{font-family:var(--font-cond);font-size:11px;letter-spacing:2.5px;text-transform:uppercase;padding:10px 26px;border:2px solid var(--accent);color:var(--accent);background:transparent;cursor:pointer;text-decoration:none;transition:all var(--transition);position:relative;overflow:hidden}
+  .nav-cta::before{content:'';position:absolute;inset:0;background:linear-gradient(135deg,var(--accent),var(--accent-hover));transform:scaleX(0);transform-origin:left;transition:transform var(--transition);z-index:0}
   .nav-cta span{position:relative;z-index:1}
-  .nav-cta:hover{color:var(--black)}
+  .nav-cta:hover{color:#fff}
   .nav-cta:hover::before{transform:scaleX(1)}
 
-  /* ── PAGE HERO ── */
-  .page-hero{min-height:76vh;position:relative;display:flex;align-items:flex-end;padding:140px 60px 80px;overflow:hidden}
-  .hero-bg{position:absolute;inset:0;background:linear-gradient(150deg,#0d1f35 0%,#080808 65%)}
-  .hero-grid{position:absolute;inset:0;opacity:.035;background-image:linear-gradient(var(--gold) 1px,transparent 1px),linear-gradient(90deg,var(--gold) 1px,transparent 1px);background-size:80px 80px}
-  .hero-glow{position:absolute;right:-80px;top:-80px;width:640px;height:640px;border-radius:50%;background:radial-gradient(circle,rgba(200,168,75,.07) 0%,transparent 65%)}
-  .hero-vline{position:absolute;left:0;top:0;width:4px;height:100%;background:linear-gradient(to bottom,transparent,var(--gold),transparent);opacity:.5}
-  .hero-bg-word{position:absolute;right:40px;bottom:-10px;font-family:var(--font-display);font-size:clamp(120px,18vw,220px);font-weight:700;color:rgba(200,168,75,.04);line-height:1;pointer-events:none;white-space:nowrap}
-  .hero-content{position:relative;z-index:2;max-width:780px}
-  .breadcrumb{display:flex;align-items:center;gap:10px;font-family:var(--font-cond);font-size:11px;letter-spacing:3px;color:var(--gold);text-transform:uppercase;margin-bottom:28px}
-  .breadcrumb a{color:rgba(200,168,75,.5);text-decoration:none;transition:color .3s}
-  .breadcrumb a:hover{color:var(--gold)}
-  .hero-eyebrow{font-family:var(--font-cond);font-size:11px;letter-spacing:5px;color:var(--gold);text-transform:uppercase;margin-bottom:18px;display:flex;align-items:center;gap:14px}
-  .hero-eyebrow::before{content:'';width:36px;height:1px;background:var(--gold)}
-  .page-title{font-family:var(--font-display);font-size:clamp(52px,7.5vw,94px);font-weight:300;line-height:.93}
-  .page-title em{font-style:italic;color:var(--gold)}
-  .page-title strong{font-weight:700;display:block}
-  .hero-tagline{font-size:16px;color:rgba(244,242,238,.55);font-weight:300;line-height:1.8;max-width:580px;margin-top:24px}
+  /* PAGE HERO */
+  .page-hero{min-height:76vh;position:relative;display:flex;align-items:flex-end;padding:130px 60px 80px;overflow:hidden}
+  .ph-bg{position:absolute;inset:0;background:linear-gradient(150deg,#EDE8DF 0%,#F4F0E8 70%)}
+  .ph-grid{position:absolute;inset:0;opacity:.035;background-image:linear-gradient(var(--accent) 1px,transparent 1px),linear-gradient(90deg,var(--accent) 1px,transparent 1px);background-size:70px 70px}
+  .ph-glow{position:absolute;right:-80px;top:-80px;width:600px;height:600px;border-radius:50%;background:radial-gradient(circle,rgba(200,168,75,.07) 0%,transparent 65%)}
+  .ph-line{position:absolute;left:0;top:0;width:4px;height:100%;background:linear-gradient(to bottom,transparent,var(--accent),transparent);opacity:.5}
+  .ph-watermark{position:absolute;right:50px;bottom:20px;font-family:var(--font-display);font-size:200px;font-weight:700;color:rgba(200,168,75,.03);line-height:1;pointer-events:none}
+  .ph-content{position:relative;z-index:2;max-width:780px}
+  .breadcrumb{display:flex;align-items:center;gap:10px;font-family:var(--font-cond);font-size:11px;letter-spacing:3px;color:var(--accent);text-transform:uppercase;margin-bottom:28px}
+  .breadcrumb a{color:rgba(200,168,75,.5);text-decoration:none;transition:color var(--transition)}
+  .breadcrumb a:hover{color:var(--accent)}
+  .ph-tag{display:inline-flex;align-items:center;gap:12px;font-family:var(--font-cond);font-size:11px;letter-spacing:4px;color:var(--accent);text-transform:uppercase;margin-bottom:22px;border:1px solid var(--border);padding:8px 20px}
+  .ph-dot{width:6px;height:6px;background:var(--accent);border-radius:50%;animation:blink 2s infinite}
+  @keyframes blink{0%,100%{opacity:1}50%{opacity:.3}}
+  .ph-title{font-family:var(--font-display);font-size:clamp(50px,7.5vw,94px);font-weight:300;line-height:.93;margin-bottom:26px}
+  .ph-title em{font-style:italic;color:var(--accent)}
+  .ph-title strong{font-weight:700;display:block}
+  .ph-sub{font-size:16px;font-weight:300;color:var(--text-muted);line-height:1.8;max-width:540px}
 
-  /* ── SHARED UTILITIES ── */
-  .label{font-family:var(--font-cond);font-size:11px;letter-spacing:5px;color:var(--gold);text-transform:uppercase;margin-bottom:16px}
-  .sec-title{font-family:var(--font-display);font-size:clamp(32px,4vw,52px);font-weight:300;line-height:1.08;margin-bottom:20px}
-  .sec-title em{font-style:italic;color:var(--gold)}
-  .body-text{color:rgba(244,242,238,.65);line-height:1.9;font-weight:300;font-size:15px;margin-bottom:14px}
-  .gold-rule{width:56px;height:2px;background:var(--gold);margin:28px 0}
+  /* SHARED */
   section{padding:100px 60px}
+  .label{font-family:var(--font-cond);font-size:11px;letter-spacing:5px;color:var(--accent);text-transform:uppercase;margin-bottom:18px}
+  .sec-title{font-family:var(--font-display);font-size:clamp(34px,4.5vw,56px);font-weight:300;line-height:1.08;margin-bottom:24px}
+  .sec-title em{font-style:italic;color:var(--accent)}
+  .body-text{color: var(--text-muted);line-height:1.9;font-weight:300;font-size:15px;margin-bottom:16px}
+  .gold-bar{width:56px;height:2px;background:var(--accent);margin:28px 0}
+  .reveal{opacity:0;transform:translateY(40px);transition:opacity .8s ease,transform .8s ease}
+  .reveal.visible{opacity:1;transform:translateY(0)}
+  .reveal-l{opacity:0;transform:translateX(-40px);transition:opacity .8s ease,transform .8s ease}
+  .reveal-l.visible{opacity:1;transform:translateX(0)}
+  .reveal-r{opacity:0;transform:translateX(40px);transition:opacity .8s ease,transform .8s ease}
+  .reveal-r.visible{opacity:1;transform:translateX(0)}
 
-  /* ── 1. OUR STORY ── */
-  .story{background:var(--black);display:grid;grid-template-columns:1fr 1fr;gap:90px;align-items:start}
-  .story-quote-block{position:relative;padding:48px 48px 48px 56px;border:1px solid var(--border);background:var(--deep)}
-  .story-quote-block::before{content:'"';font-family:var(--font-display);font-size:140px;color:rgba(200,168,75,.08);position:absolute;top:-30px;left:20px;line-height:1;pointer-events:none}
-  .story-quote{font-family:var(--font-display);font-size:clamp(19px,2.4vw,28px);font-weight:300;font-style:italic;line-height:1.55;color:var(--white);margin-bottom:24px;position:relative;z-index:1}
-  .story-attr{font-family:var(--font-cond);font-size:11px;letter-spacing:3px;color:var(--gold);text-transform:uppercase}
-  .story-timeline{display:flex;flex-direction:column;gap:0;margin-top:36px}
-  .st-step{display:flex;gap:18px;padding-bottom:26px;position:relative}
-  .st-step::before{content:'';position:absolute;left:13px;top:26px;bottom:0;width:1px;background:linear-gradient(to bottom,rgba(200,168,75,.3),transparent)}
-  .st-step:last-child::before{display:none}
-  .st-dot{width:26px;height:26px;border-radius:50%;border:2px solid var(--gold);background:var(--black);display:flex;align-items:center;justify-content:center;flex-shrink:0;margin-top:2px}
-  .st-dot-inner{width:8px;height:8px;border-radius:50%;background:var(--gold)}
-  .st-year{font-family:var(--font-display);font-size:13px;color:var(--gold);margin-bottom:3px}
-  .st-text{font-size:14px;color:rgba(244,242,238,.6);font-weight:300;line-height:1.7}
+  /* 1. STORY */
+  .story{background:var(--card);display:grid;grid-template-columns:1fr 1fr;gap:90px;align-items:center}
+  .story-visual{position:relative;aspect-ratio:4/5}
+  .story-bg{position:absolute;inset:0;background:linear-gradient(135deg,var(--navy),#101a28)}
+  .story-inner{position:absolute;inset:22px;border:1px solid var(--border)}
+  .story-year{position:absolute;top:36px;right:36px;font-family:var(--font-display);font-size:80px;font-weight:700;color:rgba(200,168,75,.12);line-height:1}
+  .story-icon{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:90px;height:90px;fill:rgba(200,168,75,.1)}
+  .story-quote{position:absolute;bottom:48px;left:36px;right:36px;font-family:var(--font-display);font-size:18px;font-style:italic;font-weight:300;color: var(--text-muted);line-height:1.5}
+  .story-badge{position:absolute;bottom:-18px;left:40px;background:var(--accent);color:var(--black);font-family:var(--font-cond);font-size:11px;letter-spacing:3px;text-transform:uppercase;padding:10px 22px;font-weight:600}
+  .story-list{display:flex;flex-direction:column;gap:14px;margin-top:12px}
+  .story-item{display:flex;align-items:flex-start;gap:14px}
+  .story-dot{width:6px;height:6px;background:var(--accent);flex-shrink:0;margin-top:7px}
+  .story-item-text{font-size:14px;color: var(--text-muted);line-height:1.7}
 
-  /* ── 2. MISSION & VISION ── */
-  .mv{background:var(--navy)}
-  .mv-grid{display:grid;grid-template-columns:1fr 1fr;gap:3px;margin-top:56px}
-  .mv-card{background:var(--black);padding:52px 48px;position:relative;overflow:hidden}
-  .mv-card::before{content:'';position:absolute;top:0;left:0;right:0;height:3px;background:linear-gradient(90deg,var(--gold),var(--gold-light))}
-  .mv-bg-word{position:absolute;bottom:-14px;right:-8px;font-family:var(--font-display);font-size:110px;font-weight:700;color:rgba(200,168,75,.04);line-height:1;pointer-events:none}
-  .mv-icon{width:44px;height:44px;fill:var(--gold);margin-bottom:22px}
-  .mv-type{font-family:var(--font-cond);font-size:10px;letter-spacing:5px;color:var(--gold);text-transform:uppercase;margin-bottom:12px}
-  .mv-headline{font-family:var(--font-display);font-size:clamp(22px,2.5vw,30px);font-weight:400;font-style:italic;margin-bottom:16px}
-  .mv-text{color:rgba(244,242,238,.6);font-size:14px;line-height:1.9;font-weight:300;position:relative;z-index:1}
+  /* 2. MISSION/VISION */
+  .mv{background:var(--bg)}
+  .mv-grid{display:grid;grid-template-columns:1fr 1fr;gap:3px;margin-top:60px}
+  .mv-card{background:var(--card);padding:52px 48px;position:relative;overflow:hidden}
+  .mv-card::before{content:'';position:absolute;top:0;left:0;right:0;height:3px;background:linear-gradient(90deg,var(--accent),var(--accent-hover))}
+  .mv-watermark{position:absolute;bottom:-20px;right:20px;font-family:var(--font-display);font-size:110px;font-weight:700;color:rgba(200,168,75,.04);line-height:1;pointer-events:none}
+  .mv-icon{width:50px;height:50px;border:1px solid var(--border);border-radius:50%;display:flex;align-items:center;justify-content:center;background:rgba(192,90,53,0.10);margin-bottom:28px}
+  .mv-icon svg{width:24px;height:24px;fill:var(--accent)}
+  .mv-lbl{font-family:var(--font-cond);font-size:10px;letter-spacing:5px;color:var(--accent);text-transform:uppercase;margin-bottom:14px}
+  .mv-head{font-family:var(--font-display);font-size:26px;font-style:italic;font-weight:300;margin-bottom:18px}
+  .mv-text{font-size:14px;color: var(--text-muted);line-height:1.9;font-weight:300}
 
-  /* ── 3. SERVICE PHILOSOPHY ── */
-  .philosophy{background:var(--deep)}
-  .philosophy-inner{display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:center}
-  .philosophy-principles{display:flex;flex-direction:column;gap:3px;margin-top:40px}
-  .principle{background:var(--black);padding:22px 28px;display:flex;align-items:center;gap:18px;transition:background .3s}
-  .principle:hover{background:#0e141e}
-  .principle-check{width:32px;height:32px;border-radius:50%;background:rgba(200,168,75,.1);border:1px solid var(--border);display:flex;align-items:center;justify-content:center;flex-shrink:0}
-  .principle-check svg{width:16px;height:16px;fill:var(--gold)}
-  .principle-text{font-family:var(--font-cond);font-size:14px;font-weight:600;letter-spacing:1px;color:var(--white)}
-  .philosophy-right{position:sticky;top:120px}
-  .philosophy-statement{background:var(--navy);border:1px solid var(--border);padding:44px 40px;position:relative;margin-top:40px}
-  .philosophy-statement::before{content:'';position:absolute;top:0;left:0;right:0;height:2px;background:linear-gradient(90deg,var(--gold),var(--gold-light))}
-  .ps-text{font-family:var(--font-display);font-size:clamp(18px,2.2vw,26px);font-weight:300;font-style:italic;line-height:1.6;color:var(--white);margin-bottom:20px}
-  .ps-attribution{font-family:var(--font-cond);font-size:10px;letter-spacing:3px;color:var(--gold);text-transform:uppercase}
+  /* 3. PHILOSOPHY */
+  .philosophy{background:var(--bg-alt)}
+  .philosophy-grid{display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:center}
+  .phi-list{display:flex;flex-direction:column;gap:0;margin-top:44px}
+  .phi-item{display:flex;gap:24px;align-items:flex-start;padding:24px 0;border-bottom:1px solid var(--border-soft)}
+  .phi-item:last-child{border-bottom:none}
+  .phi-num{font-family:var(--font-display);font-size:36px;font-weight:300;color:rgba(200,168,75,.18);line-height:1;flex-shrink:0;width:46px}
+  .phi-title{font-family:var(--font-cond);font-size:14px;font-weight:600;letter-spacing:1.5px;text-transform:uppercase;margin-bottom:8px}
+  .phi-desc{font-size:13px;color:var(--text-muted);line-height:1.75;font-weight:300}
+  .phi-checklist{background:var(--card);border:1px solid var(--border);padding:44px}
+  .phi-check-tag{font-family:var(--font-cond);font-size:10px;letter-spacing:4px;color:var(--accent);text-transform:uppercase;margin-bottom:28px}
+  .phi-check{display:flex;align-items:center;gap:14px;padding:14px 0;border-bottom:1px solid var(--border-soft)}
+  .phi-check:last-child{border-bottom:none}
+  .phi-check-dot{width:26px;height:26px;background:rgba(192,90,53,0.10);border:1px solid var(--border);border-radius:50%;display:flex;align-items:center;justify-content:center;flex-shrink:0}
+  .phi-check-dot svg{width:13px;height:13px;fill:var(--accent)}
+  .phi-check-text{font-family:var(--font-cond);font-size:13px;letter-spacing:.5px;color:var(--text-muted)}
 
-  /* ── 4. TRUST INDICATORS ── */
-  .trust{background:var(--black)}
-  .trust-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:3px;margin-top:56px}
-  .trust-card{background:var(--deep);padding:40px 32px;position:relative;overflow:hidden;transition:background .3s}
-  .trust-card:hover{background:#111}
-  .trust-card::after{content:'';position:absolute;bottom:0;left:0;right:0;height:2px;background:var(--gold);transform:scaleX(0);transform-origin:left;transition:transform .4s}
+  /* 4. TRUST */
+  .trust{background:var(--card)}
+  .trust-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:3px;margin-top:60px}
+  .trust-card{background:var(--bg);padding:38px 32px;position:relative;overflow:hidden;transition:background var(--transition)}
+  .trust-card:hover{background:#EDE8DF}
+  .trust-card::after{content:'';position:absolute;bottom:0;left:0;right:0;height:2px;background:linear-gradient(90deg,var(--accent),var(--accent-hover));transform:scaleX(0);transform-origin:left;transition:transform var(--transition)}
   .trust-card:hover::after{transform:scaleX(1)}
-  .trust-icon{width:44px;height:44px;fill:var(--gold);margin-bottom:20px}
-  .trust-title{font-family:var(--font-cond);font-size:16px;font-weight:600;letter-spacing:1px;margin-bottom:12px}
-  .trust-desc{color:rgba(244,242,238,.52);font-size:13px;line-height:1.8;font-weight:300}
+  .trust-icon{width:46px;height:46px;background:rgba(192,90,53,0.10);border:1px solid var(--border);border-radius:50%;display:flex;align-items:center;justify-content:center;margin-bottom:22px;transition:background var(--transition),border-color var(--transition)}
+  .trust-card:hover .trust-icon{background:rgba(200,168,75,.2);border-color:var(--accent)}
+  .trust-icon svg{width:22px;height:22px;fill:var(--accent)}
+  .trust-num{position:absolute;top:18px;right:20px;font-family:var(--font-display);font-size:50px;font-weight:700;color:rgba(200,168,75,.06);line-height:1}
+  .trust-title{font-family:var(--font-cond);font-size:14px;font-weight:600;letter-spacing:1px;margin-bottom:12px}
+  .trust-text{font-size:13px;color:var(--text-muted);line-height:1.75;font-weight:300}
 
-  /* ── 5. WHO WE SERVE ── */
-  .who-we-serve{background:var(--navy)}
-  .wws-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:3px;margin-top:56px}
-  .wws-card{background:var(--black);padding:36px 30px;display:flex;flex-direction:column;gap:14px;transition:background .3s;cursor:default}
-  .wws-card:hover{background:#0e1420}
-  .wws-icon{width:40px;height:40px;fill:var(--gold)}
-  .wws-title{font-family:var(--font-cond);font-size:17px;font-weight:600;letter-spacing:1px}
-  .wws-desc{color:rgba(244,242,238,.5);font-size:13px;line-height:1.7;font-weight:300}
+  /* 5. WHO WE SERVE */
+  .serve{background:var(--bg)}
+  .serve-inner{display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:start}
+  .serve-list{display:flex;flex-direction:column;gap:3px;margin-top:40px}
+  .serve-row{background:var(--card);display:flex;align-items:center;gap:18px;padding:18px 24px;transition:background var(--transition),border-left var(--transition);border-left:3px solid transparent;cursor:default}
+  .serve-row:hover{background:#EDE8DF;border-left-color:var(--accent)}
+  .serve-icon{width:36px;height:36px;background:rgba(192,90,53,0.10);border:1px solid var(--border);border-radius:50%;display:flex;align-items:center;justify-content:center;flex-shrink:0}
+  .serve-icon svg{width:17px;height:17px;fill:var(--accent)}
+  .serve-name{font-family:var(--font-cond);font-size:13px;font-weight:600;letter-spacing:1.5px;text-transform:uppercase}
+  .serve-detail{font-size:12px;color: var(--text-muted);font-weight:300;margin-top:2px}
+  .serve-arrow{margin-left:auto;color:var(--accent);opacity:0;transition:opacity var(--transition),transform var(--transition);transform:translateX(-6px)}
+  .serve-row:hover .serve-arrow{opacity:1;transform:translateX(0)}
+  .serve-stats{display:flex;flex-direction:column;gap:14px;margin-top:12px}
+  .serve-stat{border:1px solid var(--border);padding:28px 32px;background:var(--card);position:relative;overflow:hidden}
+  .serve-stat::before{content:'';position:absolute;top:0;left:0;width:3px;height:100%;background:var(--accent)}
+  .serve-stat-num{font-family:var(--font-display);font-size:52px;font-weight:300;color:var(--accent);line-height:1}
+  .serve-stat-lbl{font-family:var(--font-cond);font-size:11px;letter-spacing:3px;color: var(--text-muted);text-transform:uppercase;margin-top:6px}
 
-  /* ── 6. WHY CHOOSE US vs TAXIS ── */
-  .why-us{background:var(--deep)}
-  .why-us-inner{display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:start}
-  .why-sticky{position:sticky;top:120px}
-  .vs-table{display:flex;flex-direction:column;gap:2px;margin-top:8px}
-  .vs-row{display:grid;grid-template-columns:1fr 1fr;gap:2px}
-  .vs-header{background:transparent;padding:12px 20px;font-family:var(--font-cond);font-size:10px;letter-spacing:4px;text-transform:uppercase;color:var(--grey)}
-  .vs-header.gold{color:var(--gold)}
-  .vs-cell{padding:18px 20px;font-size:14px;font-weight:300;display:flex;align-items:center;gap:10px}
-  .vs-cell.furahia{background:rgba(200,168,75,.06);color:var(--white);border-left:2px solid var(--gold)}
-  .vs-cell.taxi{background:rgba(255,255,255,.03);color:rgba(244,242,238,.4)}
-  .vs-check{width:16px;height:16px;fill:var(--gold);flex-shrink:0}
-  .vs-cross{width:16px;height:16px;fill:rgba(244,242,238,.25);flex-shrink:0}
-  .why-list{display:flex;flex-direction:column;gap:2px}
-  .why-item{background:var(--black);padding:26px 30px;display:grid;grid-template-columns:52px 1fr;gap:16px;align-items:start;transition:background .3s}
-  .why-item:hover{background:#0e141e}
-  .why-num{font-family:var(--font-display);font-size:36px;font-weight:300;color:rgba(200,168,75,.2);line-height:1;transition:color .3s}
-  .why-item:hover .why-num{color:rgba(200,168,75,.4)}
-  .why-title{font-family:var(--font-cond);font-size:15px;font-weight:600;letter-spacing:1px;margin-bottom:7px}
-  .why-desc{color:rgba(244,242,238,.5);font-size:13px;line-height:1.75;font-weight:300}
-
-  /* ── 7. BY THE NUMBERS ── */
-  .numbers-section{background:var(--gold);padding:80px 60px}
-  .numbers-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:0}
-  .num-item{text-align:center;padding:0 20px;border-right:1px solid rgba(0,0,0,.15)}
+  /* 6. NUMBERS */
+  .numbers{background:var(--accent);padding:80px 60px}
+  .numbers-inner{display:grid;grid-template-columns:repeat(4,1fr);gap:0}
+  .num-item{text-align:center;padding:0 20px;border-right:1px solid rgba(255,255,255,.2)}
   .num-item:last-child{border-right:none}
-  .num-val{font-family:var(--font-display);font-size:clamp(42px,5vw,66px);font-weight:300;color:var(--black);line-height:1}
-  .num-label{font-family:var(--font-cond);font-size:11px;letter-spacing:3px;text-transform:uppercase;color:rgba(0,0,0,.6);margin-top:10px}
+  .num-val{font-family:var(--font-display);font-size:62px;font-weight:300;color:#fff;line-height:1}
+  .num-lbl{font-family:var(--font-cond);font-size:11px;letter-spacing:3px;text-transform:uppercase;color:rgba(255,255,255,.75);margin-top:10px}
+  .num-desc{font-size:12px;color:rgba(0,0,0,.45);margin-top:6px;font-weight:300}
 
-  /* ── 8. THE TEAM ── */
-  .team{background:var(--black)}
-  .team-intro{max-width:640px;margin-bottom:60px}
-  .team-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:3px}
-  .team-card{background:var(--deep);overflow:hidden;transition:background .3s}
-  .team-card:hover{background:#101820}
-  .team-avatar{aspect-ratio:1;background:linear-gradient(135deg,var(--navy),rgba(200,168,75,.12));display:flex;align-items:center;justify-content:center;border-bottom:1px solid var(--border-soft);position:relative}
-  .team-initials{font-family:var(--font-display);font-size:52px;font-weight:300;color:rgba(200,168,75,.35)}
-  .team-avatar-bar{position:absolute;bottom:0;left:0;right:0;height:2px;background:linear-gradient(90deg,var(--gold),var(--gold-light))}
-  .team-info{padding:26px 22px 28px}
+  /* 7. WHY CHOOSE US */
+  .vs{background:var(--bg-alt)}
+  .vs-header{margin-bottom:60px}
+  .vs-grid{display:grid;grid-template-columns:1fr 1fr;gap:3px}
+  .vs-col{background:var(--card)}
+  .vs-col-head{padding:24px 34px;border-bottom:1px solid var(--border-soft)}
+  .vs-col-lbl{font-family:var(--font-cond);font-size:10px;letter-spacing:4px;text-transform:uppercase;margin-bottom:6px}
+  .vs-col-lbl.gold{color:var(--accent)}
+  .vs-col-lbl.dim{color: var(--text-muted)}
+  .vs-col-name{font-family:var(--font-display);font-size:22px;font-weight:300}
+  .vs-col-name em{font-style:italic;color:var(--accent)}
+  .vs-row{display:flex;align-items:flex-start;gap:14px;padding:18px 34px;border-bottom:1px solid var(--border-soft)}
+  .vs-row:last-child{border-bottom:none}
+  .vs-ic{width:20px;height:20px;flex-shrink:0;margin-top:2px}
+  .vs-ic.yes svg{fill:#4ade80}
+  .vs-ic.no svg{fill:rgba(245,243,239,.18)}
+  .vs-rt{font-family:var(--font-cond);font-size:12px;font-weight:600;letter-spacing:.8px;margin-bottom:3px}
+  .vs-rt.dim{color: var(--text-muted)}
+  .vs-rd{font-size:12px;color: var(--text-muted);font-weight:300;line-height:1.55}
+  .vs-rd.dim{color: var(--text-muted)}
+
+  /* 8. TEAM */
+  .team{background:var(--card)}
+  .team-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:3px;margin-top:60px}
+  .team-card{background:var(--bg)}
+  .team-avatar{aspect-ratio:1;background:linear-gradient(135deg,var(--navy),#101a28);display:flex;align-items:center;justify-content:center;position:relative}
+  .team-av-inner{width:70%;height:70%;border-radius:50%;background:rgba(200,168,75,.07);border:1px solid var(--border);display:flex;align-items:center;justify-content:center}
+  .team-init{font-family:var(--font-display);font-size:50px;font-weight:300;color:rgba(200,168,75,.3)}
+  .team-info{padding:24px 22px 26px}
   .team-name{font-family:var(--font-display);font-size:20px;font-weight:400;margin-bottom:4px}
-  .team-role{font-family:var(--font-cond);font-size:10px;letter-spacing:3px;color:var(--gold);text-transform:uppercase;margin-bottom:12px}
-  .team-bio{color:rgba(244,242,238,.48);font-size:12px;line-height:1.7;font-weight:300}
-  .team-bottom{padding:0 22px 22px;display:flex;align-items:center;justify-content:space-between}
-  .team-years{font-family:var(--font-cond);font-size:10px;letter-spacing:2px;color:rgba(200,168,75,.5);text-transform:uppercase;border-top:1px solid var(--border-soft);padding-top:12px;width:100%}
+  .team-role{font-family:var(--font-cond);font-size:10px;letter-spacing:3px;color:var(--accent);text-transform:uppercase;margin-bottom:14px}
+  .team-bio{color: var(--text-muted);font-size:12px;line-height:1.7;font-weight:300}
+  .team-div{height:1px;background:var(--border);margin:12px 0}
+  .team-tag{font-family:var(--font-cond);font-size:10px;letter-spacing:2px;color:rgba(200,168,75,.5);text-transform:uppercase}
 
-  /* ── 9. SAFETY COMMITMENT ── */
-  .safety{background:var(--navy)}
-  .safety-inner{display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:center}
-  .safety-visual{position:relative}
-  .safety-shield{width:100%;max-width:340px;margin:0 auto;display:block}
-  .safety-points{display:flex;flex-direction:column;gap:18px;margin-top:40px}
-  .safety-point{display:flex;align-items:flex-start;gap:16px;padding:20px 24px;background:rgba(255,255,255,.03);border:1px solid var(--border-soft);transition:border-color .3s}
-  .safety-point:hover{border-color:rgba(200,168,75,.3)}
-  .sp-icon{width:36px;height:36px;fill:var(--gold);flex-shrink:0;margin-top:2px}
-  .sp-title{font-family:var(--font-cond);font-size:14px;font-weight:600;letter-spacing:1px;margin-bottom:5px}
-  .sp-text{color:rgba(244,242,238,.52);font-size:13px;line-height:1.7;font-weight:300}
+  /* 9. SAFETY */
+  .safety{background:var(--bg)}
+  .safety-inner{display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:start}
+  .safety-points{display:flex;flex-direction:column;gap:3px;margin-top:40px}
+  .safety-pt{display:flex;gap:16px;align-items:flex-start;background:var(--card);padding:24px 26px;border:1px solid var(--border-soft);transition:border-color var(--transition)}
+  .safety-pt:hover{border-color:var(--border)}
+  .safety-pt-icon{width:36px;height:36px;background:rgba(192,90,53,0.10);border-radius:50%;display:flex;align-items:center;justify-content:center;flex-shrink:0;margin-top:2px}
+  .safety-pt-icon svg{width:17px;height:17px;fill:var(--accent)}
+  .safety-pt-title{font-family:var(--font-cond);font-size:13px;font-weight:600;letter-spacing:1px;margin-bottom:5px}
+  .safety-pt-text{font-size:13px;color: var(--text-muted);font-weight:300;line-height:1.65}
+  .safety-right{display:flex;flex-direction:column;gap:0}
+  .safety-rings-wrap{display:flex;align-items:center;justify-content:center;aspect-ratio:1;position:relative;max-width:320px;margin:0 auto 40px}
+  .safety-ring{position:absolute;border:1px solid var(--border);border-radius:50%}
+  .sr1{width:90%;height:90%}
+  .sr2{width:68%;height:68%;border-style:dashed;animation:rotateSlow 30s linear infinite}
+  .sr3{width:46%;height:46%}
+  .safety-center{width:100px;height:100px;border:2px solid var(--accent);border-radius:50%;display:flex;align-items:center;justify-content:center;background:rgba(200,168,75,.06)}
+  .safety-center svg{width:46px;height:46px;fill:var(--accent)}
+  @keyframes rotateSlow{from{transform:rotate(0)}to{transform:rotate(360deg)}}
+  .cert-list{display:flex;flex-direction:column;gap:10px}
+  .cert-item{background:var(--card);border:1px solid var(--border);padding:16px 22px;display:flex;align-items:center;gap:14px}
+  .cert-icon{width:24px;height:24px;fill:var(--accent);flex-shrink:0}
+  .cert-name{font-family:var(--font-cond);font-size:13px;font-weight:600;letter-spacing:.8px;margin-bottom:3px}
+  .cert-detail{font-size:11px;color: var(--text-muted);font-weight:300}
 
-  /* ── 10. COMMUNITY IMPACT ── */
-  .community{background:var(--deep)}
-  .community-inner{display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:center}
-  .impact-pillars{display:grid;grid-template-columns:1fr 1fr;gap:3px;margin-top:40px}
-  .impact-pillar{background:var(--black);padding:32px 28px;position:relative;overflow:hidden}
-  .impact-pillar::before{content:'';position:absolute;top:0;left:0;right:0;height:2px;background:var(--gold)}
-  .ip-icon{width:36px;height:36px;fill:var(--gold);margin-bottom:16px}
-  .ip-name{font-family:var(--font-cond);font-size:14px;font-weight:600;letter-spacing:1px;margin-bottom:8px}
-  .ip-desc{color:rgba(244,242,238,.5);font-size:12px;line-height:1.7;font-weight:300}
-  .impact-stats{display:flex;flex-direction:column;gap:20px;margin-top:40px}
-  .impact-stat{border-left:2px solid var(--gold);padding-left:20px}
-  .is-num{font-family:var(--font-display);font-size:46px;font-weight:300;color:var(--gold);line-height:1}
-  .is-label{font-family:var(--font-cond);font-size:11px;letter-spacing:3px;color:var(--grey);text-transform:uppercase;margin-top:4px}
+  /* 10. COMMUNITY */
+  .community{background:var(--bg-alt)}
+  .community-inner{display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:start}
+  .pillar-grid{display:grid;grid-template-columns:1fr 1fr;gap:3px;margin-top:12px}
+  .pillar{background:var(--card);padding:28px 26px;position:relative}
+  .pillar::before{content:'';position:absolute;top:0;left:0;right:0;height:2px;background:var(--accent)}
+  .pillar-icon{width:36px;height:36px;fill:var(--accent);margin-bottom:14px}
+  .pillar-title{font-family:var(--font-cond);font-size:13px;font-weight:600;letter-spacing:1.5px;text-transform:uppercase;margin-bottom:10px}
+  .pillar-text{font-size:13px;color: var(--text-muted);line-height:1.7;font-weight:300}
 
-  /* ── CLOSING CTA ── */
-  .cta-section{background:var(--black);text-align:center;padding:110px 60px;position:relative;overflow:hidden}
-  .cta-section::before{content:'';position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:600px;height:600px;border-radius:50%;background:radial-gradient(circle,rgba(200,168,75,.06) 0%,transparent 65%);pointer-events:none}
-  .cta-eyebrow{font-family:var(--font-cond);font-size:11px;letter-spacing:5px;color:var(--gold);text-transform:uppercase;margin-bottom:20px;position:relative;z-index:1}
-  .cta-title{font-family:var(--font-display);font-size:clamp(34px,5vw,62px);font-weight:300;line-height:1.08;margin-bottom:18px;position:relative;z-index:1}
-  .cta-title em{font-style:italic;color:var(--gold)}
-  .cta-sub{color:rgba(244,242,238,.5);font-size:15px;font-weight:300;max-width:580px;margin:0 auto 44px;line-height:1.8;position:relative;z-index:1}
-  .cta-actions{display:flex;justify-content:center;gap:20px;flex-wrap:wrap;position:relative;z-index:1}
-  .btn-gold{font-family:var(--font-cond);font-size:12px;letter-spacing:3px;text-transform:uppercase;padding:18px 40px;background:var(--gold);color:var(--black);border:none;cursor:pointer;text-decoration:none;transition:all .3s;font-weight:600}
-  .btn-gold:hover{background:var(--gold-light);transform:translateY(-2px)}
-  .btn-outline{font-family:var(--font-cond);font-size:12px;letter-spacing:3px;text-transform:uppercase;padding:18px 40px;background:transparent;color:var(--white);border:1px solid rgba(255,255,255,.25);cursor:pointer;text-decoration:none;transition:all .3s}
-  .btn-outline:hover{border-color:var(--gold);color:var(--gold)}
+  /* CTA */
+  .cta-close{background:var(--card);text-align:center;padding:110px 60px;position:relative;overflow:hidden}
+  .cta-close::before{content:'';position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:600px;height:600px;border-radius:50%;background:radial-gradient(circle,rgba(200,168,75,.06) 0%,transparent 65%);pointer-events:none}
+  .cta-sub{font-size:15px;color: var(--text-muted);font-weight:300;max-width:540px;margin:18px auto 42px;line-height:1.8;position:relative;z-index:1}
+  .cta-btns{display:flex;justify-content:center;gap:20px;position:relative;z-index:1;flex-wrap:wrap}
+  .btn-gold{font-family:var(--font-cond);font-size:12px;letter-spacing:3px;text-transform:uppercase;padding:17px 40px;background:var(--accent);color:var(--black);border:none;cursor:pointer;text-decoration:none;transition:all .3s;font-weight:600;display:inline-block}
+  .btn-gold:hover{background:var(--accent-hover);color:var(--text);transform:translateY(-2px)}
+  .btn-ghost{font-family:var(--font-cond);font-size:12px;letter-spacing:3px;text-transform:uppercase;padding:17px 40px;background:transparent;color: var(--text);border:1px solid rgba(255,255,255,.25);cursor:pointer;text-decoration:none;transition:all .3s;display:inline-block}
+  .btn-ghost:hover{border-color:var(--accent);color:var(--accent)}
 
-  /* ── FOOTER ── */
-  footer{background:#050505;border-top:1px solid var(--border);padding:80px 60px 40px}
+  /* FOOTER */
+  footer{background:var(--footer-bg);border-top:none;padding:80px 60px 40px}
   .footer-grid{display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:60px;margin-bottom:60px}
   .footer-logo{display:flex;align-items:center;gap:14px;margin-bottom:24px}
-  .footer-desc{color:rgba(244,242,238,.4);font-size:13px;line-height:1.8;font-weight:300}
-  .footer-col-title{font-family:var(--font-cond);font-size:11px;letter-spacing:4px;color:var(--gold);text-transform:uppercase;margin-bottom:24px}
+  .footer-desc{color: rgba(249,247,242,0.65);font-size:13px;line-height:1.8;font-weight:300}
+  .footer-col-title{font-family:var(--font-cond);font-size:11px;letter-spacing:4px;color:var(--accent-hover);text-transform:uppercase;margin-bottom:24px}
   .footer-links{list-style:none;display:flex;flex-direction:column;gap:12px}
-  .footer-links a{font-size:13px;color:rgba(244,242,238,.5);text-decoration:none;font-weight:300;transition:color .3s}
-  .footer-links a:hover{color:var(--gold)}
-  .footer-bottom{border-top:1px solid var(--border);padding-top:30px;display:flex;justify-content:space-between;align-items:center}
-  .footer-copy{font-size:12px;color:rgba(244,242,238,.3);font-family:var(--font-cond);letter-spacing:1px}
+  .footer-links a{font-size:13px;color: rgba(249,247,242,0.65);text-decoration:none;font-weight:300;transition:color .3s}
+  .footer-links a:hover{color:var(--accent-hover)}
+  .footer-bottom{border-top:1px solid rgba(249,247,242,0.12);padding-top:30px;display:flex;justify-content:space-between;align-items:center}
+  .footer-copy{font-size:12px;color: rgba(249,247,242,0.5);font-family:var(--font-cond);letter-spacing:1px}
   .footer-bottom-links{display:flex;gap:30px}
-  .footer-bottom-links a{font-size:11px;color:rgba(244,242,238,.3);text-decoration:none;font-family:var(--font-cond);letter-spacing:1px}
+  .footer-bottom-links a{font-size:11px;color: rgba(249,247,242,0.5);text-decoration:none;font-family:var(--font-cond);letter-spacing:1px}
 
-  /* ── WHATSAPP ── */
   .whatsapp-float{position:fixed;bottom:28px;right:28px;z-index:9999;width:58px;height:58px;background:#25D366;border-radius:50%;display:flex;align-items:center;justify-content:center;box-shadow:0 6px 24px rgba(37,211,102,.45),0 2px 8px rgba(0,0,0,.35);text-decoration:none;animation:waPopIn .6s 1.2s both cubic-bezier(.34,1.56,.64,1);transition:transform .25s cubic-bezier(.34,1.56,.64,1),box-shadow .25s ease,background .25s ease}
   .whatsapp-float:hover{background:#128C7E;transform:scale(1.12);box-shadow:0 10px 36px rgba(37,211,102,.55),0 4px 14px rgba(0,0,0,.4)}
   .whatsapp-float svg{width:30px;height:30px;fill:#fff}
   @keyframes waPopIn{0%{opacity:0;transform:scale(.3) translateY(20px)}100%{opacity:1;transform:scale(1) translateY(0)}}
 
-  /* ── REVEAL ── */
-  .reveal{opacity:0;transform:translateY(38px);transition:opacity .8s ease,transform .8s ease}
-  .reveal.visible{opacity:1;transform:translateY(0)}
-  .reveal-l{opacity:0;transform:translateX(-36px);transition:opacity .8s ease,transform .8s ease}
-  .reveal-l.visible{opacity:1;transform:translateX(0)}
-  .reveal-r{opacity:0;transform:translateX(36px);transition:opacity .8s ease,transform .8s ease}
-  .reveal-r.visible{opacity:1;transform:translateX(0)}
-
-  /* ── RESPONSIVE ── */
   @media(max-width:900px){
     nav{padding:0 24px}
     .nav-links{display:none}
     section{padding:70px 24px}
-    .page-hero{padding:120px 24px 60px;min-height:auto}
-    .story,.philosophy-inner,.why-us-inner,.safety-inner,.community-inner{grid-template-columns:1fr;gap:44px}
-    .mv-grid,.trust-grid,.wws-grid{grid-template-columns:1fr}
+    .page-hero{padding:120px 24px 60px}
+    .story,.mv-grid,.philosophy-grid,.serve-inner,.vs-grid,.safety-inner,.community-inner{grid-template-columns:1fr}
+    .trust-grid{grid-template-columns:1fr 1fr}
     .team-grid{grid-template-columns:1fr 1fr}
-    .numbers-grid{grid-template-columns:1fr 1fr;gap:24px}
-    .num-item{border-right:none;border-bottom:1px solid rgba(0,0,0,.1);padding-bottom:20px}
-    .impact-pillars{grid-template-columns:1fr}
-    .cta-actions{flex-direction:column;align-items:center}
+    .numbers-inner{grid-template-columns:1fr 1fr;gap:30px}
+    .num-item{border-right:none;padding-bottom:20px}
     .footer-grid{grid-template-columns:1fr 1fr}
-    .philosophy-right{position:static}
-    .why-sticky{position:static}
+    .story-visual{display:none}
+    .pillar-grid{grid-template-columns:1fr}
+    .safety-rings-wrap{max-width:240px}
+    .cta-btns{flex-direction:column;align-items:center}
   }
 </style>
 </head>
 <body>
 
-<!-- NAV -->
 <nav>
   <a href="index.html" class="nav-logo">
-    <div class="nav-logo-icon">
-      <svg viewBox="0 0 24 24"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
-    </div>
-    <div>
-      <span class="nav-logo-text">FURAHIA TRANSFER</span>
-      <span class="nav-logo-sub">GROUP</span>
-    </div>
-  </a>
+  <img src="data:image/png;base64,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" alt="Furahia Transfers &amp; Logistics" style="height:54px;width:auto;display:block;" />
+</a>
   <ul class="nav-links">
     <li><a href="index.html">Home</a></li>
     <li><a href="about.html" class="active">About</a></li>
-    <li><a href="#">Hospitality</a></li>
-    <li><a href="#">Cargo</a></li>
-    <li><a href="#">Our Fleet</a></li>
-    <li><a href="#">Impact</a></li>
+    <li><a href="hospitality.html">Hospitality</a></li>
+    <li><a href="cargo.html">Cargo</a></li>
+    <li><a href="vehicles.html">Our Fleet</a></li>
+    <li><a href="society.html">Give Back</a></li>
     <li><a href="contact.html">Contact</a></li>
   </ul>
-  <a href="contact.html" class="nav-cta"><span>Book Now</span></a>
+  <a href="contact.html" class="nav-cta"><span>Book a Transfer</span></a>
 </nav>
 
-<!-- ════════════════════════════
-     HERO
-     ════════════════════════════ -->
+<!-- HERO -->
 <div class="page-hero">
-  <div class="hero-bg"></div>
-  <div class="hero-grid"></div>
-  <div class="hero-glow"></div>
-  <div class="hero-vline"></div>
-  <div class="hero-bg-word">FURAHIA</div>
-  <div class="hero-content">
-    <div class="breadcrumb"><a href="index.html">Home</a> <span>/</span> <span>About Us</span></div>
-    <div class="hero-eyebrow">Est. 2005 · Arusha, Tanzania</div>
-    <h1 class="page-title">
-      A Modern Transport<br>
-      Company <em>Built on<br>Reliability</em>
-    </h1>
-    <p class="hero-tagline">We started Furahia Transfer to solve one simple problem: unreliable transport. Today we are East Africa's benchmark for airport transfers, cargo logistics, and hospitality mobility — trusted by individuals, hotels, corporations, and NGOs alike.</p>
+  <div class="ph-bg"></div><div class="ph-grid"></div><div class="ph-glow"></div><div class="ph-line"></div>
+  <div class="ph-watermark">ABOUT</div>
+  <div class="ph-content">
+    <div class="breadcrumb"><a href="index.html">Home</a><span style="color: var(--text-muted)">/</span><span>About Us</span></div>
+    <div class="ph-tag"><div class="ph-dot"></div>EST. 2005 — Arusha, Tanzania</div>
+    <h1 class="ph-title">A Modern Transport<br>Company Built on<br><em>Reliability.</em></h1>
+    <p class="ph-sub">We started with one mission: to solve unreliable transport. Today Furahia Transfer is East Africa's benchmark for punctual, professional, and safe mobility services.</p>
   </div>
 </div>
 
-<!-- ════════════════════════════
-     1. OUR STORY
-     ════════════════════════════ -->
+
+<!-- 1. OUR STORY -->
 <section class="story">
-  <div class="reveal-l">
-    <div class="label">Our Story</div>
-    <h2 class="sec-title">Why We <em>Started</em></h2>
-    <p class="body-text">Furahia Transfer was born from a real frustration. Our founder, James Mwangi, spent years watching travelers, businesses, and lodge guests suffer through unreliable, unprofessional, and unsafe ground transport across East Africa. Drivers who didn't show up. Vehicles that broke down. No communication. No accountability.</p>
-    <p class="body-text">In 2005, he launched Furahia Transfer with four vehicles, two professional drivers, and one commitment: that every person who books with us arrives safely, on time, and feeling respected. Eighteen years later, that commitment hasn't changed — only the scale has.</p>
-    <div class="gold-rule"></div>
-    <p class="body-text">Today we operate a fleet of 80+ vehicles, serve 500+ active clients across six countries, and handle everything from VIP airport pickups to cross-border cargo consignments. But the founding promise remains at the centre of everything we do.</p>
-
-    <!-- Mini timeline -->
-    <div class="story-timeline">
-      <div class="st-step">
-        <div class="st-dot"><div class="st-dot-inner"></div></div>
-        <div>
-          <div class="st-year">2005 — Founded</div>
-          <div class="st-text">Four vehicles, one airport route, and a determination to raise the standard of ground transport in Tanzania.</div>
-        </div>
-      </div>
-      <div class="st-step">
-        <div class="st-dot"><div class="st-dot-inner"></div></div>
-        <div>
-          <div class="st-year">2008 — Hospitality Division</div>
-          <div class="st-text">First contracts signed with five-star safari lodges. Our hospitality transfer service was born.</div>
-        </div>
-      </div>
-      <div class="st-step">
-        <div class="st-dot"><div class="st-dot-inner"></div></div>
-        <div>
-          <div class="st-year">2012 — Cargo Division</div>
-          <div class="st-text">First cross-border freight run completed. We expanded from moving people to moving goods.</div>
-        </div>
-      </div>
-      <div class="st-step">
-        <div class="st-dot"><div class="st-dot-inner"></div></div>
-        <div>
-          <div class="st-year">2016 — ISO 9001 Certified</div>
-          <div class="st-text">International quality management certification — confirming our corporate-grade operating standard.</div>
-        </div>
-      </div>
-      <div class="st-step">
-        <div class="st-dot"><div class="st-dot-inner"></div></div>
-        <div>
-          <div class="st-year">Today — 80+ Vehicles, 6 Countries</div>
-          <div class="st-text">Serving corporations, lodges, NGOs, and private travelers across East Africa. Still growing. Still reliable.</div>
-        </div>
-      </div>
-    </div>
+  <div class="story-visual reveal-l">
+    <div class="story-bg"></div>
+    <div class="story-inner"></div>
+    <div class="story-year">2005</div>
+    <svg class="story-icon" viewBox="0 0 100 100"><circle cx="50" cy="50" r="38" fill="none" stroke="rgba(200,168,75,0.25)" stroke-width="1"/><path d="M22 50 Q50 22 78 50 Q50 78 22 50Z" fill="rgba(200,168,75,0.07)" stroke="rgba(200,168,75,0.35)" stroke-width="1"/></svg>
+    <div class="story-quote">"Built to solve unreliable transport — one journey at a time."</div>
+    <div class="story-badge">Founded in Arusha</div>
   </div>
-
   <div class="reveal-r">
-    <div class="story-quote-block">
-      <p class="story-quote">"Travelers and businesses deserve punctual, professional, and safe mobility services. That belief started this company — and it still drives every decision we make."</p>
-      <div class="story-attr">— James Mwangi, Founder &amp; CEO</div>
+    <div class="label">Our Story</div>
+    <h2 class="sec-title">Why Furahia<br><em>Transfer Exists</em></h2>
+    <p class="body-text">Furahia Transfer was founded in 2005 to solve one straightforward problem: unreliable transport. Travelers were missing flights, businesses were losing clients, and hospitality guests were arriving frustrated. We saw a chance to do something different — to bring a genuine corporate standard to ground transport in East Africa.</p>
+    <p class="body-text">What started as four vehicles on a single airport route has grown into a full-service transfer and logistics company serving 500+ clients across six countries. Our expansion was never driven by ambition alone — it was pulled by the trust of clients who wanted more of what we do.</p>
+    <p class="body-text">Every service we offer today — airport transfers, executive taxi, cargo logistics, hospitality transport, and sightseeing — traces back to that original commitment: travelers and businesses deserve punctual, professional, and safe mobility delivered without excuses.</p>
+    <div class="gold-bar"></div>
+    <div class="story-list">
+      <div class="story-item"><div class="story-dot"></div><div class="story-item-text">Founded in Arusha with four vehicles and a single airport route</div></div>
+      <div class="story-item"><div class="story-dot"></div><div class="story-item-text">Grew to serve 500+ corporate, hospitality, and private clients</div></div>
+      <div class="story-item"><div class="story-dot"></div><div class="story-item-text">Expanded across Tanzania, Kenya, Uganda, Rwanda, Burundi &amp; DRC</div></div>
+      <div class="story-item"><div class="story-dot"></div><div class="story-item-text">ISO 9001:2015 certified &amp; SUMATRA licensed fleet</div></div>
+      <div class="story-item"><div class="story-dot"></div><div class="story-item-text">Today: 80+ vehicles, 24/7 dispatch, full cargo &amp; logistics coverage</div></div>
     </div>
   </div>
 </section>
 
-<!-- ════════════════════════════
-     2. MISSION & VISION
-     ════════════════════════════ -->
+
+<!-- 2. MISSION & VISION -->
 <section class="mv">
-  <div class="reveal" style="text-align:center;max-width:600px;margin:0 auto">
-    <div class="label">Our Purpose</div>
-    <h2 class="sec-title">Guided by <em>Clarity of Intent</em></h2>
-    <p class="body-text" style="color:rgba(244,242,238,.5)">We are not simply a transport company. We are a commitment — to reliability, to people, and to the communities we serve.</p>
-  </div>
+  <div class="reveal"><div class="label">Our Purpose</div><h2 class="sec-title">Guided by <em>Clarity of Intent</em></h2></div>
   <div class="mv-grid reveal">
     <div class="mv-card">
-      <div class="mv-bg-word">Mission</div>
-      <svg class="mv-icon" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 14.5v-9l6 4.5-6 4.5z"/></svg>
-      <div class="mv-type">Our Mission</div>
-      <div class="mv-headline">To move people and goods safely, professionally, and on time.</div>
-      <p class="mv-text">To provide East Africa's travelers, corporations, hospitality operators, and trade networks with transfer and logistics services of uncompromising quality — delivered by passionate people, enabled by modern technology, and grounded in integrity at every stage of the journey.</p>
+      <div class="mv-watermark">Mission</div>
+      <div class="mv-icon"><svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 14.5v-9l6 4.5-6 4.5z"/></svg></div>
+      <div class="mv-lbl">Our Mission</div>
+      <div class="mv-head">To move people and goods safely, professionally, and on time.</div>
+      <p class="mv-text">Every service Furahia provides is measured against one standard: did we move our client safely, professionally, and on time? We apply this whether we're transporting a single airport passenger or coordinating a multi-country cargo consignment. Our mission is not a statement — it is the measure we use every single day.</p>
     </div>
     <div class="mv-card">
-      <div class="mv-bg-word">Vision</div>
-      <svg class="mv-icon" viewBox="0 0 24 24"><path d="M12 4.5C7 4.5 2.73 7.61 1 12c1.73 4.39 6 7.5 11 7.5s9.27-3.11 11-7.5c-1.73-4.39-6-7.5-11-7.5zM12 17c-2.76 0-5-2.24-5-5s2.24-5 5-5 5 2.24 5 5-2.24 5-5 5zm0-8c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z"/></svg>
-      <div class="mv-type">Our Vision</div>
-      <div class="mv-headline">To become a trusted leader in modern transport and logistics across Africa.</div>
-      <p class="mv-text">To be recognised as the continent's most reliable transfer and logistics group — a company that sets the benchmark not only for operational excellence but for how a business can invest in its people, its communities, and its environment while growing sustainably.</p>
+      <div class="mv-watermark">Vision</div>
+      <div class="mv-icon"><svg viewBox="0 0 24 24"><path d="M12 4.5C7 4.5 2.73 7.61 1 12c1.73 4.39 6 7.5 11 7.5s9.27-3.11 11-7.5c-1.73-4.39-6-7.5-11-7.5zM12 17c-2.76 0-5-2.24-5-5s2.24-5 5-5 5 2.24 5 5-2.24 5-5 5zm0-8c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z"/></svg></div>
+      <div class="mv-lbl">Our Vision</div>
+      <div class="mv-head">To become the trusted leader in modern transport and logistics across Africa.</div>
+      <p class="mv-text">We are building toward a future where "Furahia Transfer" is the first name that comes to mind when a business, hotel, or traveler in Africa needs ground transport they can depend on. Not because we are the biggest, but because we are the most trusted — the company whose standards set the benchmark for the industry.</p>
     </div>
   </div>
 </section>
 
-<!-- ════════════════════════════
-     3. SERVICE PHILOSOPHY
-     ════════════════════════════ -->
+
+<!-- 3. SERVICE PHILOSOPHY -->
 <section class="philosophy">
-  <div class="philosophy-inner">
+  <div class="philosophy-grid">
     <div class="reveal-l">
-      <div class="label">Our Service Standard</div>
-      <h2 class="sec-title">How We <em>Deliver</em></h2>
-      <p class="body-text">Every journey we provide follows three core principles: <strong style="color:var(--white)">reliability</strong>, <strong style="color:var(--white)">professionalism</strong>, and <strong style="color:var(--white)">care</strong>. From airport pickups to cargo deliveries, we treat every service with the same level of attention — regardless of size, distance, or client.</p>
-      <p class="body-text">We never cut corners on communication. Before every journey, your driver is confirmed. During the journey, you can track in real time. After — we follow up to make sure everything met your expectations.</p>
-      <div class="philosophy-principles">
-        <div class="principle">
-          <div class="principle-check"><svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg></div>
-          <span class="principle-text">Punctuality — on time, every time</span>
+      <div class="label">How We Deliver</div>
+      <h2 class="sec-title">Our Service<br><em>Standard</em></h2>
+      <p class="body-text">We don't just move people from A to B. Every journey follows three core principles that apply equally to a single airport pickup and a full cargo shipment: <strong style="color: var(--text)">reliability, professionalism, and genuine care.</strong></p>
+      <div class="phi-list">
+        <div class="phi-item">
+          <div class="phi-num">01</div>
+          <div><div class="phi-title">Reliability</div><p class="phi-desc">We show up on time, every time. Flight monitoring ensures airport pickups are never delayed by schedules we can't control. A 99.4% on-time rate is the result of disciplined planning, not luck.</p></div>
         </div>
-        <div class="principle">
-          <div class="principle-check"><svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg></div>
-          <span class="principle-text">Professional, uniformed drivers</span>
+        <div class="phi-item">
+          <div class="phi-num">02</div>
+          <div><div class="phi-title">Professionalism</div><p class="phi-desc">Uniformed drivers, spotless vehicles, proactive communication. Our clients represent some of the world's finest hospitality brands. How we present ourselves reflects on them — we never forget that.</p></div>
         </div>
-        <div class="principle">
-          <div class="principle-check"><svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg></div>
-          <span class="principle-text">Clear, proactive communication</span>
-        </div>
-        <div class="principle">
-          <div class="principle-check"><svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg></div>
-          <span class="principle-text">Customer-first service approach</span>
-        </div>
-        <div class="principle">
-          <div class="principle-check"><svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg></div>
-          <span class="principle-text">Clean, maintained, inspected vehicles</span>
-        </div>
-        <div class="principle">
-          <div class="principle-check"><svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg></div>
-          <span class="principle-text">Real-time GPS tracking on every journey</span>
-        </div>
-        <div class="principle">
-          <div class="principle-check"><svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg></div>
-          <span class="principle-text">24/7 dispatch &amp; responsive support</span>
+        <div class="phi-item">
+          <div class="phi-num">03</div>
+          <div><div class="phi-title">Genuine Care</div><p class="phi-desc">We treat each passenger and cargo consignment as if it were our own. We ask questions, remember preferences, and go beyond the brief whenever a client needs us to.</p></div>
         </div>
       </div>
     </div>
-    <div class="reveal-r philosophy-right">
-      <div class="label">Service Philosophy</div>
-      <h3 class="sec-title" style="font-size:clamp(26px,3vw,38px)">Three Principles.<br><em>Every Journey.</em></h3>
-      <div class="philosophy-statement">
-        <p class="ps-text">"Reliability means we are always there. Professionalism means we behave with respect and expertise. Care means we treat every passenger and every consignment as if it were our own."</p>
-        <div class="ps-attribution">— The Furahia Standard</div>
-      </div>
+    <div class="phi-checklist reveal-r">
+      <div class="phi-check-tag">Our Service Commitment</div>
+      <div class="phi-check"><div class="phi-check-dot"><svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg></div><span class="phi-check-text">Punctuality on every booking</span></div>
+      <div class="phi-check"><div class="phi-check-dot"><svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg></div><span class="phi-check-text">Professional, uniformed drivers</span></div>
+      <div class="phi-check"><div class="phi-check-dot"><svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg></div><span class="phi-check-text">Clear, proactive communication</span></div>
+      <div class="phi-check"><div class="phi-check-dot"><svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg></div><span class="phi-check-text">Customer-first service at every touchpoint</span></div>
+      <div class="phi-check"><div class="phi-check-dot"><svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg></div><span class="phi-check-text">Immaculately maintained vehicles</span></div>
+      <div class="phi-check"><div class="phi-check-dot"><svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg></div><span class="phi-check-text">Real-time GPS tracking on every journey</span></div>
+      <div class="phi-check"><div class="phi-check-dot"><svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg></div><span class="phi-check-text">Fast response via phone &amp; WhatsApp 24/7</span></div>
+      <div class="phi-check"><div class="phi-check-dot"><svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg></div><span class="phi-check-text">Transparent pricing — no hidden charges</span></div>
     </div>
   </div>
 </section>
 
-<!-- ════════════════════════════
-     4. TRUST INDICATORS
-     ════════════════════════════ -->
+
+<!-- 4. WHY CLIENTS TRUST US -->
 <section class="trust">
   <div class="reveal">
-    <div class="label">Why Clients Trust Us</div>
-    <h2 class="sec-title">Credibility You Can<br><em>Count On</em></h2>
+    <div class="label">Trust &amp; Credibility</div>
+    <h2 class="sec-title">Why Clients<br><em>Trust Us</em></h2>
+    <p class="body-text" style="max-width:560px">Transport is a high-trust business. You're placing your guests, your employees, or your cargo in our hands. Here is what backs our promise.</p>
   </div>
   <div class="trust-grid reveal">
-    <div class="trust-card">
-      <svg class="trust-icon" viewBox="0 0 24 24"><path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4zm0 4.99L18 9v4.99c0 3.72-2.56 7.2-6 8.32-3.44-1.12-6-4.6-6-8.32V9l6-3.01z"/></svg>
-      <div class="trust-title">Licensed &amp; Fully Insured</div>
-      <p class="trust-desc">Fully licensed under SUMATRA and compliant with Tanzania Revenue Authority regulations. Comprehensive vehicle and passenger insurance on every trip.</p>
-    </div>
-    <div class="trust-card">
-      <svg class="trust-icon" viewBox="0 0 24 24"><path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/></svg>
-      <div class="trust-title">Professional Drivers</div>
-      <p class="trust-desc">Every driver is vetted, trained, uniformed, and briefed on our service standards. Multilingual options available for international clients.</p>
-    </div>
-    <div class="trust-card">
-      <svg class="trust-icon" viewBox="0 0 24 24"><path d="M18.92 6.01C18.72 5.42 18.16 5 17.5 5h-11c-.66 0-1.21.42-1.42 1.01L3 12v8c0 .55.45 1 1 1h1c.55 0 1-.45 1-1v-1h12v1c0 .55.45 1 1 1h1c.55 0 1-.45 1-1v-8l-2.08-5.99zM6.5 16c-.83 0-1.5-.67-1.5-1.5S5.67 13 6.5 13s1.5.67 1.5 1.5S7.33 16 6.5 16zm11 0c-.83 0-1.5-.67-1.5-1.5s.67-1.5 1.5-1.5 1.5.67 1.5 1.5-.67 1.5-1.5 1.5zM5 11l1.5-4.5h11L19 11H5z"/></svg>
-      <div class="trust-title">Clean &amp; Well-Maintained Vehicles</div>
-      <p class="trust-desc">Our fleet is serviced on a scheduled maintenance programme. Every vehicle is cleaned, inspected, and roadworthy before every assignment.</p>
-    </div>
-    <div class="trust-card">
-      <svg class="trust-icon" viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
-      <div class="trust-title">Real-Time GPS Tracking</div>
-      <p class="trust-desc">Every vehicle in our fleet is GPS-tracked. Clients receive a live tracking link before pickup — full visibility, zero surprises.</p>
-    </div>
-    <div class="trust-card">
-      <svg class="trust-icon" viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
-      <div class="trust-title">Transparent Pricing</div>
-      <p class="trust-desc">No hidden fees. No surprises. Every quote is itemised and confirmed in writing before your journey begins. Corporate accounts invoiced monthly.</p>
-    </div>
-    <div class="trust-card">
-      <svg class="trust-icon" viewBox="0 0 24 24"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
-      <div class="trust-title">Fast Response &amp; 24/7 Support</div>
-      <p class="trust-desc">Our dispatch operates around the clock. Reach us by phone, email, or WhatsApp — day or night. Bookings confirmed within 2 hours.</p>
-    </div>
+    <div class="trust-card"><div class="trust-num">01</div><div class="trust-icon"><svg viewBox="0 0 24 24"><path d="M18.92 6.01C18.72 5.42 18.16 5 17.5 5h-11c-.66 0-1.21.42-1.42 1.01L3 12v8c0 .55.45 1 1 1h1c.55 0 1-.45 1-1v-1h12v1c0 .55.45 1 1 1h1c.55 0 1-.45 1-1v-8l-2.08-5.99z"/></svg></div><div class="trust-title">Professional Drivers</div><p class="trust-text">Licensed, vetted, and trained in client handling. Background-checked, uniformed, and fluent in English and Swahili. You always know who is meeting you.</p></div>
+    <div class="trust-card"><div class="trust-num">02</div><div class="trust-icon"><svg viewBox="0 0 24 24"><path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4z"/></svg></div><div class="trust-title">Licensed &amp; Insured</div><p class="trust-text">SUMATRA licensed, fully insured, and ISO 9001:2015 certified. We operate within the law and above the minimum standard — full peace of mind guaranteed.</p></div>
+    <div class="trust-card"><div class="trust-num">03</div><div class="trust-icon"><svg viewBox="0 0 24 24"><path d="M21 16v-2l-8-5V3.5c0-.83-.67-1.5-1.5-1.5S10 2.67 10 3.5V9l-8 5v2l8-2.5V19l-2 1.5V22l3.5-1 3.5 1v-1.5L13 19v-5.5l8 2.5z"/></svg></div><div class="trust-title">Reliable Airport Coordination</div><p class="trust-text">We monitor every inbound flight in real time. Flight delayed or early? Your driver adjusts automatically. No extra charges for delays up to 90 minutes.</p></div>
+    <div class="trust-card"><div class="trust-num">04</div><div class="trust-icon"><svg viewBox="0 0 24 24"><path d="M12 4.5C7 4.5 2.73 7.61 1 12c1.73 4.39 6 7.5 11 7.5s9.27-3.11 11-7.5c-1.73-4.39-6-7.5-11-7.5zM12 17c-2.76 0-5-2.24-5-5s2.24-5 5-5 5 2.24 5 5-2.24 5-5 5z"/></svg></div><div class="trust-title">Real-Time GPS Tracking</div><p class="trust-text">Every vehicle is GPS tracked. You receive a live tracking link before the journey begins — always know where your driver or cargo is at any moment.</p></div>
+    <div class="trust-card"><div class="trust-num">05</div><div class="trust-icon"><svg viewBox="0 0 24 24"><path d="M17.498 14.382c-.301-.15-1.767-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075C13 14.654 12.043 14.341 11 13.33c-.888-.795-1.484-1.77-1.66-2.07-.174-.3-.019-.465.13-.615.136-.135.301-.345.451-.523.146-.181.194-.301.297-.496.1-.21.049-.375-.025-.524l-.916-2.207c-.24-.584-.487-.51-.669-.51l-.57-.015c-.198 0-.52.074-.792.372C6.959 7.631 6 8.35 6 9.813s1.07 2.865 1.219 3.075c.149.195 2.105 3.195 5.1 4.485.714.3 1.27.48 1.704.629.714.227 1.365.195 1.88.121.574-.091 1.767-.721 2.016-1.426.255-.705.255-1.29.18-1.425-.074-.135-.27-.21-.57-.345z"/></svg></div><div class="trust-title">Fast Response &amp; 24/7 Support</div><p class="trust-text">Reach us by phone, WhatsApp, or email any time. A real person answers. Bookings confirmed within 2 hours. Corporate clients get a dedicated coordinator.</p></div>
+    <div class="trust-card"><div class="trust-num">06</div><div class="trust-icon"><svg viewBox="0 0 24 24"><path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zm4.24 16L12 15.45 7.77 18l1.12-4.81-3.73-3.23 4.92-.42L12 5l1.92 4.53 4.92.42-3.73 3.23L16.23 18z"/></svg></div><div class="trust-title">Transparent Pricing</div><p class="trust-text">Your quote is confirmed before the journey. No meter surprises, no hidden add-ons, no last-minute changes. What we quote is exactly what you pay.</p></div>
   </div>
 </section>
 
-<!-- ════════════════════════════
-     5. WHO WE SERVE
-     ════════════════════════════ -->
-<section class="who-we-serve">
-  <div class="reveal">
-    <div class="label">Who We Work With</div>
-    <h2 class="sec-title">Built for <em>Every Client Type</em></h2>
-    <p class="body-text" style="max-width:580px">If you need dependable transport or freight logistics in East Africa, we are built for you. Here's exactly who we serve:</p>
-  </div>
-  <div class="wws-grid reveal">
-    <div class="wws-card">
-      <svg class="wws-icon" viewBox="0 0 24 24"><path d="M21 16v-2l-8-5V3.5c0-.83-.67-1.5-1.5-1.5S10 2.67 10 3.5V9l-8 5v2l8-2.5V19l-2 1.5V22l3.5-1 3.5 1v-1.5L13 19v-5.5l8 2.5z"/></svg>
-      <div class="wws-title">Individual Travelers</div>
-      <p class="wws-desc">Tourists, business travelers, and residents needing safe, reliable airport pickups, drop-offs, and point-to-point transfers.</p>
-    </div>
-    <div class="wws-card">
-      <svg class="wws-icon" viewBox="0 0 24 24"><path d="M7 13c1.66 0 3-1.34 3-3S8.66 7 7 7s-3 1.34-3 3 1.34 3 3 3zm12-6h-8v7H3V5H1v15h2v-3h18v3h2v-9c0-2.21-1.79-4-4-4z"/></svg>
-      <div class="wws-title">Hotels &amp; Lodges</div>
-      <p class="wws-desc">Five-star resorts, safari lodges, and boutique hotels needing branded, reliable guest transfer coordination.</p>
-    </div>
-    <div class="wws-card">
-      <svg class="wws-icon" viewBox="0 0 24 24"><path d="M12 7V3H2v18h20V7H12zM6 19H4v-2h2v2zm0-4H4v-2h2v2zm0-4H4v-2h2v2zm0-4H4V5h2v2zm4 12H8v-2h2v2zm0-4H8v-2h2v2zm0-4H8v-2h2v2zm0-4H8V5h2v2zm10 12h-8v-2h2v-2h-2v-2h2v-2h-2V9h8v10zm-2-8h-2v2h2v-2zm0 4h-2v2h2v-2z"/></svg>
-      <div class="wws-title">Corporate Companies</div>
-      <p class="wws-desc">Multinationals, SMEs, and institutions requiring executive fleet services, corporate accounts, and monthly billing.</p>
-    </div>
-    <div class="wws-card">
-      <svg class="wws-icon" viewBox="0 0 24 24"><path d="M16 11c1.66 0 2.99-1.34 2.99-3S17.66 5 16 5c-1.66 0-3 1.34-3 3s1.34 3 3 3zm-8 0c1.66 0 2.99-1.34 2.99-3S9.66 5 8 5C6.34 5 5 6.34 5 8s1.34 3 3 3zm0 2c-2.33 0-7 1.17-7 3.5V19h14v-2.5c0-2.33-4.67-3.5-7-3.5zm8 0c-.29 0-.62.02-.97.05 1.16.84 1.97 1.97 1.97 3.45V19h6v-2.5c0-2.33-4.67-3.5-7-3.5z"/></svg>
-      <div class="wws-title">Event Organisers</div>
-      <p class="wws-desc">Conference coordinators, wedding planners, and summit organisers needing multi-vehicle, timed group logistics.</p>
-    </div>
-    <div class="wws-card">
-      <svg class="wws-icon" viewBox="0 0 24 24"><path d="M12 4.5C7 4.5 2.73 7.61 1 12c1.73 4.39 6 7.5 11 7.5s9.27-3.11 11-7.5c-1.73-4.39-6-7.5-11-7.5zM12 17c-2.76 0-5-2.24-5-5s2.24-5 5-5 5 2.24 5 5-2.24 5-5 5zm0-8c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z"/></svg>
-      <div class="wws-title">Tour Operators</div>
-      <p class="wws-desc">Safari companies, travel agents, and DMCs relying on us for airstrip transfers, sightseeing vehicles, and lodge runs.</p>
-    </div>
-    <div class="wws-card">
-      <svg class="wws-icon" viewBox="0 0 24 24"><path d="M20 8h-3V4H3c-1.1 0-2 .9-2 2v11h2c0 1.66 1.34 3 3 3s3-1.34 3-3h6c0 1.66 1.34 3 3 3s3-1.34 3-3h2v-5l-3-4zM6 18.5c-.83 0-1.5-.67-1.5-1.5s.67-1.5 1.5-1.5 1.5.67 1.5 1.5-.67 1.5-1.5 1.5zm13.5-9l1.96 2.5H17V9.5h2.5zm-1.5 9c-.83 0-1.5-.67-1.5-1.5s.67-1.5 1.5-1.5 1.5.67 1.5 1.5-.67 1.5-1.5 1.5z"/></svg>
-      <div class="wws-title">Businesses Needing Cargo</div>
-      <p class="wws-desc">Manufacturers, importers, retailers, and NGOs requiring domestic or cross-border freight delivery and customs support.</p>
-    </div>
-  </div>
-</section>
 
-<!-- ════════════════════════════
-     6. WHY CHOOSE US vs TAXIS
-     ════════════════════════════ -->
-<section class="why-us">
-  <div class="why-us-inner">
-    <div class="why-sticky reveal-l">
-      <div class="label">Why Choose Furahia</div>
-      <h2 class="sec-title">Why Us Instead of<br><em>Regular Taxis?</em></h2>
-      <p class="body-text">Regular taxis and ride-hailing apps are fine for short local trips. But for airport coordination, corporate travel, hospitality guests, and cargo — the difference is significant.</p>
-      <p class="body-text">Here's what sets Furahia Transfer apart from unmanaged taxi services:</p>
-      <!-- Comparison table -->
-      <div class="vs-table" style="margin-top:36px">
-        <div class="vs-row">
-          <div class="vs-header gold">Furahia Transfer</div>
-          <div class="vs-header">Regular Taxi</div>
-        </div>
-        <div class="vs-row">
-          <div class="vs-cell furahia"><svg class="vs-check" viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>Flight monitoring &amp; delay tracking</div>
-          <div class="vs-cell taxi"><svg class="vs-cross" viewBox="0 0 24 24"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>Not available</div>
-        </div>
-        <div class="vs-row">
-          <div class="vs-cell furahia"><svg class="vs-check" viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>Written booking confirmation</div>
-          <div class="vs-cell taxi"><svg class="vs-cross" viewBox="0 0 24 24"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>Verbal only</div>
-        </div>
-        <div class="vs-row">
-          <div class="vs-cell furahia"><svg class="vs-check" viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>Corporate invoicing &amp; accounts</div>
-          <div class="vs-cell taxi"><svg class="vs-cross" viewBox="0 0 24 24"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>Cash only</div>
-        </div>
-        <div class="vs-row">
-          <div class="vs-cell furahia"><svg class="vs-check" viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>Cargo &amp; freight capability</div>
-          <div class="vs-cell taxi"><svg class="vs-cross" viewBox="0 0 24 24"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>Passengers only</div>
-        </div>
-        <div class="vs-row">
-          <div class="vs-cell furahia"><svg class="vs-check" viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>Dedicated account manager</div>
-          <div class="vs-cell taxi"><svg class="vs-cross" viewBox="0 0 24 24"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>No support</div>
-        </div>
+<!-- 5. WHO WE SERVE -->
+<section class="serve">
+  <div class="serve-inner">
+    <div class="reveal-l">
+      <div class="label">Our Clients</div>
+      <h2 class="sec-title">Who We<br><em>Work With</em></h2>
+      <p class="body-text">Our services are designed for any individual or organisation that values reliability, professionalism, and discretion. If your journey or cargo matters, it matters to us.</p>
+      <div class="serve-list">
+        <div class="serve-row"><div class="serve-icon"><svg viewBox="0 0 24 24"><path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/></svg></div><div><div class="serve-name">Individual Travellers</div><div class="serve-detail">Airport pickups, hotel transfers, sightseeing runs</div></div><span class="serve-arrow">→</span></div>
+        <div class="serve-row"><div class="serve-icon"><svg viewBox="0 0 24 24"><path d="M7 13c1.66 0 3-1.34 3-3S8.66 7 7 7s-3 1.34-3 3 1.34 3 3 3zm12-6h-8v7H3V5H1v15h2v-3h18v3h2v-9c0-2.21-1.79-4-4-4z"/></svg></div><div><div class="serve-name">Hotels &amp; Lodges</div><div class="serve-detail">Guest transport partnerships, airstrip runs, VIP arrivals</div></div><span class="serve-arrow">→</span></div>
+        <div class="serve-row"><div class="serve-icon"><svg viewBox="0 0 24 24"><path d="M12 7V3H2v18h20V7H12zM6 19H4v-2h2v2zm0-4H4v-2h2v2zm0-4H4v-2h2v2zm0-4H4V5h2v2zm4 12H8v-2h2v2zm0-4H8v-2h2v2zm0-4H8v-2h2v2zm0-4H8V5h2v2zm10 12h-8v-2h2v-2h-2v-2h2v-2h-2V9h8v10z"/></svg></div><div><div class="serve-name">Corporate Companies</div><div class="serve-detail">Executive transfers, monthly billing, staff mobility</div></div><span class="serve-arrow">→</span></div>
+        <div class="serve-row"><div class="serve-icon"><svg viewBox="0 0 24 24"><path d="M17 12h-5v5h5v-5zM16 1v2H8V1H6v2H5c-1.11 0-1.99.9-1.99 2L3 19c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2h-1V1h-2z"/></svg></div><div><div class="serve-name">Event Organisers</div><div class="serve-detail">Conference fleets, delegate coordination, group logistics</div></div><span class="serve-arrow">→</span></div>
+        <div class="serve-row"><div class="serve-icon"><svg viewBox="0 0 24 24"><path d="M12 4.5C7 4.5 2.73 7.61 1 12c1.73 4.39 6 7.5 11 7.5s9.27-3.11 11-7.5c-1.73-4.39-6-7.5-11-7.5z"/></svg></div><div><div class="serve-name">Tour Operators</div><div class="serve-detail">Safari transfers, sightseeing, Kilimanjaro route logistics</div></div><span class="serve-arrow">→</span></div>
+        <div class="serve-row"><div class="serve-icon"><svg viewBox="0 0 24 24"><path d="M20 8h-3V4H3c-1.1 0-2 .9-2 2v11h2c0 1.66 1.34 3 3 3s3-1.34 3-3h6c0 1.66 1.34 3 3 3s3-1.34 3-3h2v-5l-3-4z"/></svg></div><div><div class="serve-name">Cargo Businesses</div><div class="serve-detail">Domestic &amp; cross-border freight, cold chain, customs clearance</div></div><span class="serve-arrow">→</span></div>
       </div>
     </div>
-
-    <div class="why-list reveal-r">
-      <div class="why-item">
-        <div class="why-num">01</div>
-        <div>
-          <div class="why-title">Airport Coordination</div>
-          <p class="why-desc">We monitor your flight in real time. If it's early, we're early. If it's delayed, we adjust — at no extra charge. Your driver is always there with a nameplate at arrivals.</p>
-        </div>
-      </div>
-      <div class="why-item">
-        <div class="why-num">02</div>
-        <div>
-          <div class="why-title">Professionalism You Can Show</div>
-          <p class="why-desc">Our drivers are uniformed, trained, and vetted. When you send a business guest or a hotel client, they arrive in a clean, premium vehicle — not a random car from an app.</p>
-        </div>
-      </div>
-      <div class="why-item">
-        <div class="why-num">03</div>
-        <div>
-          <div class="why-title">Reliability You Can Rely On</div>
-          <p class="why-desc">99.4% on-time rate. Our 18-year track record across tens of thousands of journeys speaks louder than any promise. Clients return because we deliver.</p>
-        </div>
-      </div>
-      <div class="why-item">
-        <div class="why-num">04</div>
-        <div>
-          <div class="why-title">Better Communication</div>
-          <p class="why-desc">You get written booking confirmation, a driver name and contact, live GPS tracking, and a follow-up after every journey. Full transparency, always.</p>
-        </div>
-      </div>
-      <div class="why-item">
-        <div class="why-num">05</div>
-        <div>
-          <div class="why-title">Complete Cargo Capability</div>
-          <p class="why-desc">No taxi can move your pharmaceutical consignment cross-border with customs clearance and cold-chain documentation. We can — and we do it every week.</p>
-        </div>
+    <div class="reveal-r">
+      <div class="serve-stats">
+        <div class="serve-stat"><div class="serve-stat-num">500+</div><div class="serve-stat-lbl">Active Clients Served</div></div>
+        <div class="serve-stat"><div class="serve-stat-num">6</div><div class="serve-stat-lbl">Countries Covered</div></div>
+        <div class="serve-stat"><div class="serve-stat-num">50K+</div><div class="serve-stat-lbl">Transfers Completed</div></div>
+        <div class="serve-stat"><div class="serve-stat-num">18+</div><div class="serve-stat-lbl">Years of Operation</div></div>
       </div>
     </div>
   </div>
 </section>
 
-<!-- ════════════════════════════
-     7. BY THE NUMBERS
-     ════════════════════════════ -->
-<section class="numbers-section">
-  <div class="numbers-grid reveal">
-    <div class="num-item">
-      <div class="num-val">2005</div>
-      <div class="num-label">Year Founded</div>
+
+<!-- 6. BY THE NUMBERS -->
+<div class="numbers reveal">
+  <div class="numbers-inner">
+    <div class="num-item"><div class="num-val">24/7</div><div class="num-lbl">Availability</div><div class="num-desc">Dispatch and support around the clock</div></div>
+    <div class="num-item"><div class="num-val">99.4%</div><div class="num-lbl">On-Time Rate</div><div class="num-desc">Measured across all airport transfers in 2024</div></div>
+    <div class="num-item"><div class="num-val">80+</div><div class="num-lbl">Fleet Vehicles</div><div class="num-desc">Executive saloons to cargo trucks &amp; safari cruisers</div></div>
+    <div class="num-item"><div class="num-val">2005</div><div class="num-lbl">Est. Arusha</div><div class="num-desc">Nearly two decades of uninterrupted operation</div></div>
+  </div>
+</div>
+
+
+<!-- 7. WHY CHOOSE US OVER REGULAR TAXIS -->
+<section class="vs">
+  <div class="vs-header reveal">
+    <div class="label">Why Furahia</div>
+    <h2 class="sec-title">Why Choose Us Instead<br>of <em>Regular Taxis?</em></h2>
+    <p class="body-text" style="max-width:560px">There are many ways to get a car in Arusha. Here is why corporations, five-star hotels, and savvy travellers choose Furahia Transfer every single time.</p>
+  </div>
+  <div class="vs-grid reveal">
+    <div class="vs-col">
+      <div class="vs-col-head"><div class="vs-col-lbl gold">Furahia Transfer</div><div class="vs-col-name"><em>Professional.</em> Reliable. Trusted.</div></div>
+      <div class="vs-row"><div class="vs-ic yes"><svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg></div><div><div class="vs-rt">Real-time flight monitoring</div><div class="vs-rd">Delays never catch us off-guard. No extra charge for flight delays up to 90 minutes</div></div></div>
+      <div class="vs-row"><div class="vs-ic yes"><svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg></div><div><div class="vs-rt">Booking confirmed in writing</div><div class="vs-rd">Driver name, vehicle, quote — all confirmed before your journey</div></div></div>
+      <div class="vs-row"><div class="vs-ic yes"><svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg></div><div><div class="vs-rt">Uniformed, vetted driver</div><div class="vs-rd">Background-checked and trained. You always know who will meet you</div></div></div>
+      <div class="vs-row"><div class="vs-ic yes"><svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg></div><div><div class="vs-rt">Cargo &amp; freight capability</div><div class="vs-rd">Beyond passengers — we move sensitive cross-border cargo with full documentation</div></div></div>
+      <div class="vs-row"><div class="vs-ic yes"><svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg></div><div><div class="vs-rt">Corporate monthly billing</div><div class="vs-rd">Consolidated invoices, account management, volume pricing for business clients</div></div></div>
+      <div class="vs-row"><div class="vs-ic yes"><svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg></div><div><div class="vs-rt">Live GPS tracking shared</div><div class="vs-rd">See exactly where your vehicle or cargo is — always, at no extra charge</div></div></div>
     </div>
-    <div class="num-item">
-      <div class="num-val">80+</div>
-      <div class="num-label">Fleet Vehicles</div>
-    </div>
-    <div class="num-item">
-      <div class="num-val">50K+</div>
-      <div class="num-label">Trips Completed</div>
-    </div>
-    <div class="num-item">
-      <div class="num-val">500+</div>
-      <div class="num-label">Satisfied Clients</div>
-    </div>
-    <div class="num-item">
-      <div class="num-val">24/7</div>
-      <div class="num-label">Always Available</div>
+    <div class="vs-col">
+      <div class="vs-col-head"><div class="vs-col-lbl dim">Regular Taxis &amp; Ride Apps</div><div class="vs-col-name" style="color: var(--text-muted)">Uncertain. Inconsistent.</div></div>
+      <div class="vs-row"><div class="vs-ic no"><svg viewBox="0 0 24 24"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg></div><div><div class="vs-rt dim">No flight monitoring</div><div class="vs-rd dim">Driver arrives at original time — your delay becomes your problem</div></div></div>
+      <div class="vs-row"><div class="vs-ic no"><svg viewBox="0 0 24 24"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg></div><div><div class="vs-rt dim">No pre-confirmed quote</div><div class="vs-rd dim">Price negotiated at the door — often changes depending on who you get</div></div></div>
+      <div class="vs-row"><div class="vs-ic no"><svg viewBox="0 0 24 24"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg></div><div><div class="vs-rt dim">Driver identity unknown</div><div class="vs-rd dim">No formal vetting — you don't know who will show up, or if they will</div></div></div>
+      <div class="vs-row"><div class="vs-ic no"><svg viewBox="0 0 24 24"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg></div><div><div class="vs-rt dim">Passengers only</div><div class="vs-rd dim">No cargo capability — limited to people movement only</div></div></div>
+      <div class="vs-row"><div class="vs-ic no"><svg viewBox="0 0 24 24"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg></div><div><div class="vs-rt dim">No corporate accounts</div><div class="vs-rd dim">Cash per ride — no invoicing, no account management, no consistency</div></div></div>
+      <div class="vs-row"><div class="vs-ic no"><svg viewBox="0 0 24 24"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg></div><div><div class="vs-rt dim">No tracking</div><div class="vs-rd dim">You don't know where the car is until it arrives — if it arrives at all</div></div></div>
     </div>
   </div>
 </section>
 
-<!-- ════════════════════════════
-     8. THE TEAM
-     ════════════════════════════ -->
+
+<!-- 8. THE TEAM -->
 <section class="team">
   <div class="reveal">
-    <div class="label">Our Team</div>
-    <h2 class="sec-title">The People <em>Behind Every Journey</em></h2>
-    <div class="team-intro">
-      <p class="body-text">Our drivers, dispatchers, coordinators, and support staff are trained to deliver professional, respectful, and customer-focused service. Every trip reflects our team's commitment to safety, reliability, and the Furahia standard.</p>
-      <p class="body-text">We invest heavily in our people — through training programmes, the Furahia Driving Academy, and a culture that rewards consistency and excellence at every level.</p>
-    </div>
+    <div class="label">Our People</div>
+    <h2 class="sec-title">The Team Behind<br><em>Every Journey</em></h2>
+    <p class="body-text" style="max-width:600px">Our drivers and support staff are trained to deliver professional, respectful, and customer-focused service. Every trip reflects our commitment to safety and reliability — because a company is only as good as the people who represent it on the road.</p>
   </div>
   <div class="team-grid reveal">
-    <div class="team-card">
-      <div class="team-avatar"><div class="team-initials">JM</div><div class="team-avatar-bar"></div></div>
-      <div class="team-info">
-        <div class="team-name">James Mwangi</div>
-        <div class="team-role">Founder &amp; CEO</div>
-        <p class="team-bio">20+ years in East African logistics. Founded Furahia in 2005 to raise the standard of ground transport across the region.</p>
-      </div>
-      <div class="team-bottom"><div class="team-years">20 Years Experience</div></div>
-    </div>
-    <div class="team-card">
-      <div class="team-avatar"><div class="team-initials">AK</div><div class="team-avatar-bar"></div></div>
-      <div class="team-info">
-        <div class="team-name">Amina Kimani</div>
-        <div class="team-role">Chief Operations Officer</div>
-        <p class="team-bio">Logistics engineer with an MBA from the University of Nairobi. Oversees all dispatch, fleet operations, and client service delivery.</p>
-      </div>
-      <div class="team-bottom"><div class="team-years">15 Years Experience</div></div>
-    </div>
-    <div class="team-card">
-      <div class="team-avatar"><div class="team-initials">DO</div><div class="team-avatar-bar"></div></div>
-      <div class="team-info">
-        <div class="team-name">David Odhiambo</div>
-        <div class="team-role">Head of Cargo &amp; Freight</div>
-        <p class="team-bio">Customs and freight specialist with deep cross-border experience. Built the cargo division from the ground up since 2012.</p>
-      </div>
-      <div class="team-bottom"><div class="team-years">12 Years Experience</div></div>
-    </div>
-    <div class="team-card">
-      <div class="team-avatar"><div class="team-initials">FN</div><div class="team-avatar-bar"></div></div>
-      <div class="team-info">
-        <div class="team-name">Fatuma Ngowi</div>
-        <div class="team-role">Director of Hospitality</div>
-        <p class="team-bio">Former lodge guest relations manager. Leads all hotel &amp; safari partnerships. Fluent in Swahili, English, and French.</p>
-      </div>
-      <div class="team-bottom"><div class="team-years">9 Years Experience</div></div>
-    </div>
+    <div class="team-card"><div class="team-avatar"><div class="team-av-inner"><div class="team-init">JM</div></div></div><div class="team-info"><div class="team-name">James Mwangi</div><div class="team-role">Founder &amp; CEO</div><div class="team-div"></div><p class="team-bio">20+ years in East African logistics. Founded Furahia with a vision to set a new standard for corporate ground transport across the region.</p><div class="team-div"></div><div class="team-tag">Leadership · Est. 2005</div></div></div>
+    <div class="team-card"><div class="team-avatar"><div class="team-av-inner"><div class="team-init">AK</div></div></div><div class="team-info"><div class="team-name">Amina Kimani</div><div class="team-role">Chief Operations Officer</div><div class="team-div"></div><p class="team-bio">Logistics engineer &amp; MBA. Oversees dispatch, fleet operations, and client service delivery for all categories across the network.</p><div class="team-div"></div><div class="team-tag">Operations · 15 Yrs Experience</div></div></div>
+    <div class="team-card"><div class="team-avatar"><div class="team-av-inner"><div class="team-init">DO</div></div></div><div class="team-info"><div class="team-name">David Odhiambo</div><div class="team-role">Head of Cargo &amp; Freight</div><div class="team-div"></div><p class="team-bio">Customs and cross-border freight specialist with 12 years managing cargo movements across the East African corridor and beyond.</p><div class="team-div"></div><div class="team-tag">Cargo · 12 Yrs Experience</div></div></div>
+    <div class="team-card"><div class="team-avatar"><div class="team-av-inner"><div class="team-init">FN</div></div></div><div class="team-info"><div class="team-name">Fatuma Ngowi</div><div class="team-role">Director of Hospitality</div><div class="team-div"></div><p class="team-bio">Former lodge guest relations manager. Leads all hospitality and hotel partnerships. Fluent in Swahili, English, and French.</p><div class="team-div"></div><div class="team-tag">Hospitality · 9 Yrs Experience</div></div></div>
   </div>
 </section>
 
-<!-- ════════════════════════════
-     9. SAFETY COMMITMENT
-     ════════════════════════════ -->
+
+<!-- 9. SAFETY COMMITMENT -->
 <section class="safety">
   <div class="safety-inner">
     <div class="reveal-l">
       <div class="label">Safety Commitment</div>
-      <h2 class="sec-title">Safety is at the<br><em>Centre of Everything</em></h2>
-      <p class="body-text">Transport is not just a service — it is a responsibility. Safety is not a feature we offer; it is the foundation every journey is built upon. Every vehicle, every driver, and every process at Furahia exists within a framework designed to protect the people and goods in our care.</p>
+      <h2 class="sec-title">Safety at the Centre<br>of <em>Everything We Do</em></h2>
+      <p class="body-text">Safety is not a checkbox at Furahia Transfer — it is the foundation on which every service is built. Vehicles are maintained to rigorous standards, drivers are trained beyond the legal minimum, and our operations are independently audited to ensure nothing slips.</p>
       <div class="safety-points">
-        <div class="safety-point">
-          <svg class="sp-icon" viewBox="0 0 24 24"><path d="M18.92 6.01C18.72 5.42 18.16 5 17.5 5h-11c-.66 0-1.21.42-1.42 1.01L3 12v8c0 .55.45 1 1 1h1c.55 0 1-.45 1-1v-1h12v1c0 .55.45 1 1 1h1c.55 0 1-.45 1-1v-8l-2.08-5.99zM6.5 16c-.83 0-1.5-.67-1.5-1.5S5.67 13 6.5 13s1.5.67 1.5 1.5S7.33 16 6.5 16zm11 0c-.83 0-1.5-.67-1.5-1.5s.67-1.5 1.5-1.5 1.5.67 1.5 1.5-.67 1.5-1.5 1.5zM5 11l1.5-4.5h11L19 11H5z"/></svg>
-          <div>
-            <div class="sp-title">Scheduled Vehicle Maintenance</div>
-            <p class="sp-text">Every vehicle follows a strict service schedule. Pre-trip inspections are mandatory. No vehicle leaves our yard in an unroadworthy condition.</p>
-          </div>
-        </div>
-        <div class="safety-point">
-          <svg class="sp-icon" viewBox="0 0 24 24"><path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4zm0 4.99L18 9v4.99c0 3.72-2.56 7.2-6 8.32-3.44-1.12-6-4.6-6-8.32V9l6-3.01z"/></svg>
-          <div>
-            <div class="sp-title">Driver Safety Training</div>
-            <p class="sp-text">All drivers complete defensive driving training and passenger safety protocols. Certifications are renewed annually through our Furahia Driving Academy.</p>
-          </div>
-        </div>
-        <div class="safety-point">
-          <svg class="sp-icon" viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
-          <div>
-            <div class="sp-title">GPS Monitoring &amp; Dispatch Oversight</div>
-            <p class="sp-text">Our 24/7 operations centre monitors every active vehicle in real time. Any incident, deviation, or emergency triggers an immediate response protocol.</p>
-          </div>
-        </div>
-        <div class="safety-point">
-          <svg class="sp-icon" viewBox="0 0 24 24"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-7 14l-5-5 1.41-1.41L12 14.17l7.59-7.59L21 8l-9 9z"/></svg>
-          <div>
-            <div class="sp-title">5 Consecutive Years — Zero Critical Incidents</div>
-            <p class="sp-text">Recognised by SUMATRA for five consecutive years without a critical safety incident across our entire fleet. Safety excellence is not an aspiration — it is our record.</p>
-          </div>
-        </div>
+        <div class="safety-pt"><div class="safety-pt-icon"><svg viewBox="0 0 24 24"><path d="M18.92 6.01C18.72 5.42 18.16 5 17.5 5h-11c-.66 0-1.21.42-1.42 1.01L3 12v8c0 .55.45 1 1 1h1c.55 0 1-.45 1-1v-1h12v1c0 .55.45 1 1 1h1c.55 0 1-.45 1-1v-8l-2.08-5.99z"/></svg></div><div><div class="safety-pt-title">Rigorous Vehicle Maintenance</div><p class="safety-pt-text">All vehicles undergo scheduled service checks and pre-trip safety inspections, maintained to manufacturer standards with zero compromise on roadworthiness.</p></div></div>
+        <div class="safety-pt"><div class="safety-pt-icon"><svg viewBox="0 0 24 24"><path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4z"/></svg></div><div><div class="safety-pt-title">Safety-First Driver Training</div><p class="safety-pt-text">Every driver completes defensive driving and passenger safety protocols. Speed, route safety, and comfort are monitored on every journey via GPS.</p></div></div>
+        <div class="safety-pt"><div class="safety-pt-icon"><svg viewBox="0 0 24 24"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-7 14l-5-5 1.41-1.41L12 14.17l7.59-7.59L21 8l-9 9z"/></svg></div><div><div class="safety-pt-title">5 Years — Zero Critical Incidents</div><p class="safety-pt-text">SUMATRA Safety Excellence Certificate for five consecutive years. Our record speaks for itself — no compromises, no shortcuts.</p></div></div>
+        <div class="safety-pt"><div class="safety-pt-icon"><svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-2h2v2zm0-4h-2V7h2v6z"/></svg></div><div><div class="safety-pt-title">Full Insurance Coverage</div><p class="safety-pt-text">All vehicles carry comprehensive third-party insurance and passenger liability. Cargo shipments are insurable with full value coverage on request.</p></div></div>
       </div>
     </div>
-    <div class="reveal-r" style="text-align:center">
-      <!-- Safety shield illustration -->
-      <svg class="safety-shield" viewBox="0 0 400 460" xmlns="http://www.w3.org/2000/svg">
-        <!-- Outer shield -->
-        <path d="M200 20 L360 80 L360 240 Q360 360 200 440 Q40 360 40 240 L40 80 Z" fill="rgba(11,28,48,0.9)" stroke="rgba(200,168,75,0.4)" stroke-width="2"/>
-        <!-- Inner shield -->
-        <path d="M200 55 L330 105 L330 240 Q330 340 200 410 Q70 340 70 240 L70 105 Z" fill="rgba(8,10,14,0.7)" stroke="rgba(200,168,75,0.2)" stroke-width="1"/>
-        <!-- Gold top bar -->
-        <path d="M200 20 L360 80 L330 105 L200 55 L70 105 L40 80 Z" fill="rgba(200,168,75,0.15)" stroke="rgba(200,168,75,0.5)" stroke-width="1"/>
-        <!-- Checkmark -->
-        <path d="M140 230 L180 270 L265 175" fill="none" stroke="rgba(200,168,75,0.9)" stroke-width="14" stroke-linecap="round" stroke-linejoin="round"/>
-        <!-- Corner dots -->
-        <circle cx="200" cy="20" r="6" fill="var(--gold)"/>
-        <circle cx="360" cy="80" r="5" fill="rgba(200,168,75,0.5)"/>
-        <circle cx="40" cy="80" r="5" fill="rgba(200,168,75,0.5)"/>
-        <!-- Label -->
-        <text x="200" y="370" text-anchor="middle" font-family="'Barlow Condensed', sans-serif" font-size="13" fill="rgba(200,168,75,0.6)" letter-spacing="4">SAFETY FIRST</text>
-        <!-- Year -->
-        <text x="200" y="395" text-anchor="middle" font-family="'Cormorant Garamond', serif" font-size="22" fill="rgba(200,168,75,0.3)" font-style="italic">Since 2005</text>
-      </svg>
+    <div class="safety-right reveal-r">
+      <div class="safety-rings-wrap">
+        <div class="safety-ring sr1"></div>
+        <div class="safety-ring sr2"></div>
+        <div class="safety-ring sr3"></div>
+        <div class="safety-center"><svg viewBox="0 0 24 24"><path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4z"/></svg></div>
+      </div>
+      <div class="cert-list">
+        <div class="cert-item"><svg class="cert-icon" viewBox="0 0 24 24"><path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4z"/></svg><div><div class="cert-name">ISO 9001:2015 Certified</div><div class="cert-detail">Quality Management — Bureau Veritas Certified</div></div></div>
+        <div class="cert-item"><svg class="cert-icon" viewBox="0 0 24 24"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-7 14l-5-5 1.41-1.41L12 14.17l7.59-7.59L21 8l-9 9z"/></svg><div><div class="cert-name">SUMATRA Licensed</div><div class="cert-detail">Surface &amp; Marine Transport Regulatory Authority — Tanzania</div></div></div>
+        <div class="cert-item"><svg class="cert-icon" viewBox="0 0 24 24"><path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zm4.24 16L12 15.45 7.77 18l1.12-4.81-3.73-3.23 4.92-.42L12 5l1.92 4.53 4.92.42-3.73 3.23L16.23 18z"/></svg><div><div class="cert-name">Safety Excellence Award</div><div class="cert-detail">5 Consecutive Years — Zero Critical Safety Incidents</div></div></div>
+        <div class="cert-item"><svg class="cert-icon" viewBox="0 0 24 24"><path d="M20 6h-2.18c.07-.44.18-.88.18-1.36C18 2.53 15.72.5 13 .5c-1.7 0-3.17.88-4 2.2C8.17 1.38 6.7.5 5 .5 2.28.5 0 2.53 0 4.64c0 .48.11.92.18 1.36H0v10c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V8l-2 2V6z"/></svg><div><div class="cert-name">IATA Cargo Agent</div><div class="cert-detail">International Air Transport Association — Accredited Ground Agent</div></div></div>
+      </div>
     </div>
   </div>
 </section>
 
-<!-- ════════════════════════════
-     10. COMMUNITY IMPACT
-     ════════════════════════════ -->
+
+<!-- 10. COMMUNITY / GIVE BACK -->
 <section class="community">
   <div class="community-inner">
     <div class="reveal-l">
       <div class="label">Giving Back</div>
-      <h2 class="sec-title">We Grow When<br><em>Communities Grow</em></h2>
-      <p class="body-text">We believe businesses grow best when the communities around them grow too. Furahia Transfer actively invests in road safety education, youth employment, and community development across our operating regions.</p>
-      <p class="body-text">Our Furahia Give Back programme channels 1% of all corporate revenues into three focus areas: education and skills, environmental sustainability, and free community mobility for underserved populations.</p>
-      <div class="impact-stats">
-        <div class="impact-stat">
-          <div class="is-num">240+</div>
-          <div class="is-label">Youth Trained in Driving Academy</div>
-        </div>
-        <div class="impact-stat">
-          <div class="is-num">3,000+</div>
-          <div class="is-label">Patients Transported Free of Charge</div>
-        </div>
-        <div class="impact-stat">
-          <div class="is-num">12,000</div>
-          <div class="is-label">Trees Planted — Kilimanjaro Reforestation</div>
-        </div>
-      </div>
-      <a href="society.html" style="display:inline-flex;align-items:center;gap:10px;margin-top:32px;font-family:var(--font-cond);font-size:11px;letter-spacing:3px;text-transform:uppercase;color:var(--gold);text-decoration:none;border:1px solid var(--border);padding:12px 22px;transition:all .3s" onmouseover="this.style.borderColor='var(--gold)'" onmouseout="this.style.borderColor='var(--border)'">
-        <svg style="width:16px;height:16px;fill:var(--gold)" viewBox="0 0 24 24"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg>
-        Read Our Give Back Story
-      </a>
+      <h2 class="sec-title">Businesses Grow Best When<br><em>Communities Grow Too</em></h2>
+      <p class="body-text">We believe a transport company's most important journeys are not always the ones on the road. Furahia Transfer is committed to supporting the communities that surround our operations — investing in road safety, youth opportunities, and local development.</p>
+      <p class="body-text">Through our Give Back programme, we fund the Furahia Driving Academy for young Tanzanians, run free rural health transport routes, and channel 1% of all corporate revenues into certified Kilimanjaro reforestation projects.</p>
+      <div class="gold-bar"></div>
+      <a href="society.html" class="btn-gold" style="display:inline-block;margin-top:8px">Read Our Full CSR Report →</a>
     </div>
     <div class="reveal-r">
-      <div class="impact-pillars">
-        <div class="impact-pillar">
-          <svg class="ip-icon" viewBox="0 0 24 24"><path d="M12 3L1 9l4 2.18v6L12 21l7-3.82v-6l2-1.09V17h2V9L12 3zm6.82 6L12 12.72 5.18 9 12 5.28 18.82 9zM17 15.99l-5 2.73-5-2.73v-3.72L12 15l5-2.73v3.72z"/></svg>
-          <div class="ip-name">Education &amp; Skills</div>
-          <p class="ip-desc">Furahia Driving Academy trains 18–25 year-olds from Arusha and Moshi. Graduates get placement interviews within our fleet and partner networks.</p>
-        </div>
-        <div class="impact-pillar">
-          <svg class="ip-icon" viewBox="0 0 24 24"><path d="M17 8C8 10 5.9 16.17 3.82 21h2.13c.6-1.63 1.4-3.2 2.37-4.69C7.9 19.6 8 22 8 22s2.1-2.49 2.1-2.49l-.57 4.75C12.2 22.77 14 22 14 22s-1.68-5-1.01-8.52L14.42 16l.53-3.53 1.8 3.56 1.07-3.46 1.29 2.25C19.8 14.78 21 12.72 21 10c0-4.49-3.38-7.38-4-2z"/></svg>
-          <div class="ip-name">Environment</div>
-          <p class="ip-desc">Green fleet transition underway. 1% of corporate revenues funds the Kilimanjaro Reforestation Fund. 12,000 trees planted in year one alone.</p>
-        </div>
-        <div class="impact-pillar">
-          <svg class="ip-icon" viewBox="0 0 24 24"><path d="M21 16v-2l-8-5V3.5c0-.83-.67-1.5-1.5-1.5S10 2.67 10 3.5V9l-8 5v2l8-2.5V19l-2 1.5V22l3.5-1 3.5 1v-1.5L13 19v-5.5l8 2.5z"/></svg>
-          <div class="ip-name">Community Mobility</div>
-          <p class="ip-desc">Monthly free transport runs connecting Monduli and Longido villages to Arusha hospitals. Over 3,000 patients transported at no cost.</p>
-        </div>
-        <div class="impact-pillar">
-          <svg class="ip-icon" viewBox="0 0 24 24"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg>
-          <div class="ip-name">Women in Logistics</div>
-          <p class="ip-desc">Annual bursaries for women in logistics and business qualifications. Mentorship from our leadership team included — 15 bursaries awarded.</p>
-        </div>
+      <div class="pillar-grid">
+        <div class="pillar"><svg class="pillar-icon" viewBox="0 0 24 24"><path d="M12 3L1 9l4 2.18v6L12 21l7-3.82v-6l2-1.09V17h2V9L12 3z"/></svg><div class="pillar-title">Education</div><p class="pillar-text">Free driving academy and bursaries for youth aged 18–25 in Arusha and Moshi. 240+ graduates placed in employment.</p></div>
+        <div class="pillar"><svg class="pillar-icon" viewBox="0 0 24 24"><path d="M17 8C8 10 5.9 16.17 3.82 21h2.13c.6-1.63 1.4-3.2 2.37-4.69-.43 3.28.03 5.42.03 5.42l2.1-2.49-.57 4.75C12.2 22.77 14 22 14 22s-1.68-5-1.01-8.52L14.42 16l.53-3.53 1.8 3.56 1.07-3.46 1.29 2.25C19.8 14.78 21 12.72 21 10c0-4.49-3.38-7.38-4-2z"/></svg><div class="pillar-title">Environment</div><p class="pillar-text">12,000+ trees planted on Kilimanjaro. Fleet electrification underway — 31% hybrid and EV by 2026.</p></div>
+        <div class="pillar"><svg class="pillar-icon" viewBox="0 0 24 24"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg><div class="pillar-title">Community</div><p class="pillar-text">3,000+ patients transported free to hospitals. Monthly rural health runs to Monduli and Longido districts.</p></div>
+        <div class="pillar"><svg class="pillar-icon" viewBox="0 0 24 24"><path d="M16 11c1.66 0 2.99-1.34 2.99-3S17.66 5 16 5c-1.66 0-3 1.34-3 3s1.34 3 3 3zm-8 0c1.66 0 2.99-1.34 2.99-3S9.66 5 8 5C6.34 5 5 6.34 5 8s1.34 3 3 3zm0 2c-2.33 0-7 1.17-7 3.5V19h14v-2.5c0-2.33-4.67-3.5-7-3.5zm8 0c-.29 0-.62.02-.97.05 1.16.84 1.97 1.97 1.97 3.45V19h6v-2.5c0-2.33-4.67-3.5-7-3.5z"/></svg><div class="pillar-title">Women in Logistics</div><p class="pillar-text">Annual bursaries for five women pursuing logistics or supply chain qualifications at Tanzanian institutions.</p></div>
       </div>
     </div>
   </div>
 </section>
 
-<!-- ════════════════════════════
-     STRONG CLOSING CTA
-     ════════════════════════════ -->
-<section class="cta-section">
-  <div class="cta-eyebrow reveal">Ready to Experience the Furahia Difference?</div>
-  <h2 class="cta-title reveal">
-    Whether You Need an Airport Pickup,<br>
-    Cargo Delivery, or <em>Anything in Between</em>
-  </h2>
-  <p class="cta-sub reveal">Our team is committed to providing dependable service you can always trust — 24 hours a day, 7 days a week. Book a transfer, request a cargo quote, or simply get in touch.</p>
-  <div class="cta-actions reveal">
-    <a href="contact.html" class="btn-gold">Book a Transfer</a>
-    <a href="contact.html" class="btn-outline">Request a Quote</a>
+
+<!-- CLOSING CTA -->
+<section class="cta-close">
+  <div class="reveal">
+    <div class="label" style="display:inline-block;margin-bottom:16px">Ready to Experience It</div>
+    <h2 class="sec-title" style="font-size:clamp(36px,5vw,66px);position:relative;z-index:1">Whether You Need an Airport Pickup,<br>Cargo Delivery, or <em>Hospitality Transport</em> —</h2>
+    <p class="cta-sub">Our team is committed to providing dependable service you can trust. Book a transfer, request a cargo quote, or set up a corporate account — we respond within 2 hours.</p>
+    <div class="cta-btns">
+      <a href="contact.html" class="btn-gold">Book a Transfer →</a>
+      <a href="contact.html" class="btn-ghost">Request a Cargo Quote</a>
+    </div>
   </div>
 </section>
+
 
 <!-- FOOTER -->
 <footer>
   <div class="footer-grid">
     <div>
       <div class="footer-logo">
-        <div class="nav-logo-icon" style="width:36px;height:36px">
-          <svg style="width:18px;height:18px;fill:var(--gold)" viewBox="0 0 24 24"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
-        </div>
-        <div>
-          <span class="nav-logo-text" style="font-size:14px">FURAHIA TRANSFER</span>
-          <span class="nav-logo-sub">GROUP</span>
-        </div>
-      </div>
+      
+      <img src="data:image/png;base64,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" alt="Furahia Transfers &amp; Logistics" style="height:60px;width:auto;display:block;" />
+    </div>
       <p class="footer-desc">Africa's premier transfer and logistics group. Precision, reliability, and excellence in every engagement since 2005.</p>
     </div>
     <div>
       <div class="footer-col-title">Services</div>
-      <ul class="footer-links">
-        <li><a href="#">Airport Transfers</a></li>
-        <li><a href="#">Executive Taxi</a></li>
-        <li><a href="#">Hospitality</a></li>
-        <li><a href="#">Cargo &amp; Freight</a></li>
-      </ul>
+      <ul class="footer-links"><li><a href="hospitality.html">Airport Transfers</a></li><li><a href="hospitality.html">Executive Taxi</a></li><li><a href="hospitality.html">Hospitality</a></li><li><a href="cargo.html">Cargo &amp; Freight</a></li></ul>
     </div>
     <div>
       <div class="footer-col-title">Company</div>
-      <ul class="footer-links">
-        <li><a href="about.html">About Us</a></li>
-        <li><a href="#">Our Fleet</a></li>
-        <li><a href="#">Impact</a></li>
-        <li><a href="#">Careers</a></li>
-        <li><a href="#">News</a></li>
-      </ul>
+      <ul class="footer-links"><li><a href="about.html">About Us</a></li><li><a href="society.html">Give Back</a></li><li><a href="#">Careers</a></li><li><a href="contact.html">Contact</a></li></ul>
     </div>
     <div>
       <div class="footer-col-title">Contact</div>
-      <ul class="footer-links">
-        <li><a href="tel:+255700000000">+255 700 000 000</a></li>
-        <li><a href="mailto:info@furahiatransfer.co">info@furahiatransfer.co</a></li>
-        <li><a href="#">Arusha, Tanzania</a></li>
-        <li><a href="#">24/7 Dispatch</a></li>
-      </ul>
+      <ul class="footer-links"><li><a href="tel:+255700000000">+255 700 000 000</a></li><li><a href="/cdn-cgi/l/email-protection#6f060109002f091a1d0e07060e1b1d0e011c090a1d410c00"><span class="__cf_email__" data-cfemail="274e49414867415255464f4e465355464954414255094448">[email&#160;protected]</span></a></li><li><a href="#">Arusha, Tanzania</a></li><li><a href="#">24/7 Dispatch</a></li></ul>
     </div>
   </div>
   <div class="footer-bottom">
-    <div class="footer-copy">© 2025 Furahia Transfer Group. All rights reserved.</div>
-    <div class="footer-bottom-links">
-      <a href="#">Privacy Policy</a>
-      <a href="#">Terms of Service</a>
-    </div>
+    <div class="footer-copy">© 2025 Furahia Transfer. All rights reserved.</div>
+    <div class="footer-bottom-links"><a href="#">Privacy Policy</a><a href="#">Terms of Service</a></div>
   </div>
 </footer>
 
-<!-- WhatsApp Floating Button -->
 <a class="whatsapp-float" href="https://wa.me/255700000000?text=Hello%20Furahia%20Transfer!%20I%27d%20like%20to%20make%20a%20booking." target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
-  <svg viewBox="0 0 32 32" aria-hidden="true">
-    <path d="M19.11 17.29c-.27-.14-1.61-.79-1.86-.88-.25-.09-.43-.14-.61.14-.18.27-.7.88-.86 1.06-.16.18-.31.2-.58.07-.27-.14-1.12-.41-2.14-1.32-.79-.71-1.33-1.58-1.49-1.85-.16-.27-.02-.41.12-.55.12-.12.27-.31.41-.47.14-.16.18-.27.27-.45.09-.18.05-.34-.02-.47-.07-.14-.61-1.47-.84-2.02-.22-.53-.44-.46-.61-.47h-.52c-.18 0-.47.07-.72.34-.25.27-.95.93-.95 2.27s.97 2.64 1.11 2.82c.14.18 1.91 2.92 4.63 4.1.65.28 1.15.45 1.55.58.65.21 1.24.18 1.71.11.52-.08 1.61-.66 1.84-1.29.23-.63.23-1.16.16-1.27-.06-.11-.25-.18-.52-.32zM16.02 3.2c-7.07 0-12.8 5.71-12.8 12.76 0 2.26.6 4.47 1.73 6.41L3.12 28.8l6.6-1.73a12.8 12.8 0 0 0 6.3 1.68h.01c7.06 0 12.79-5.72 12.79-12.77 0-3.41-1.33-6.62-3.74-9.02a12.73 12.73 0 0 0-9.06-3.76zm0 23.39h-.01a10.66 10.66 0 0 1-5.43-1.49l-.39-.23-3.92 1.03 1.05-3.82-.25-.39a10.6 10.6 0 0 1-1.63-5.67c0-5.88 4.8-10.67 10.7-10.67 2.85 0 5.52 1.1 7.53 3.11a10.58 10.58 0 0 1 3.12 7.54c0 5.89-4.8 10.68-10.68 10.68z"/>
-  </svg>
+  <svg viewBox="0 0 32 32" aria-hidden="true"><path d="M19.11 17.29c-.27-.14-1.61-.79-1.86-.88-.25-.09-.43-.14-.61.14-.18.27-.7.88-.86 1.06-.16.18-.31.2-.58.07-.27-.14-1.12-.41-2.14-1.32-.79-.71-1.33-1.58-1.49-1.85-.16-.27-.02-.41.12-.55.12-.12.27-.31.41-.47.14-.16.18-.27.27-.45.09-.18.05-.34-.02-.47-.07-.14-.61-1.47-.84-2.02-.22-.53-.44-.46-.61-.47h-.52c-.18 0-.47.07-.72.34-.25.27-.95.93-.95 2.27s.97 2.64 1.11 2.82c.14.18 1.91 2.92 4.63 4.1.65.28 1.15.45 1.55.58.65.21 1.24.18 1.71.11.52-.08 1.61-.66 1.84-1.29.23-.63.23-1.16.16-1.27-.06-.11-.25-.18-.52-.32zM16.02 3.2c-7.07 0-12.8 5.71-12.8 12.76 0 2.26.6 4.47 1.73 6.41L3.12 28.8l6.6-1.73a12.8 12.8 0 0 0 6.3 1.68h.01c7.06 0 12.79-5.72 12.79-12.77 0-3.41-1.33-6.62-3.74-9.02a12.73 12.73 0 0 0-9.06-3.76zm0 23.39h-.01a10.66 10.66 0 0 1-5.43-1.49l-.39-.23-3.92 1.03 1.05-3.82-.25-.39a10.6 10.6 0 0 1-1.63-5.67c0-5.88 4.8-10.67 10.7-10.67 2.85 0 5.52 1.1 7.53 3.11a10.58 10.58 0 0 1 3.12 7.54c0 5.89-4.8 10.68-10.68 10.68z"/></svg>
 </a>
 
 <script>
   // Nav scroll
   (function(){
     var n = document.querySelector('nav');
-    if(!n) return;
-    function chk(){ n.classList.toggle('scrolled', window.scrollY > 36); }
-    window.addEventListener('scroll', chk, {passive:true});
+    if (!n) return;
+    function chk() { n.classList.toggle('scrolled', window.scrollY > 36); }
+    window.addEventListener('scroll', chk, {passive: true});
     chk();
   })();
 
-  // Scroll reveal
-  const obs = new IntersectionObserver(entries => {
-    entries.forEach(e => { if(e.isIntersecting) e.target.classList.add('visible'); });
-  }, { threshold: 0.1 });
-  document.querySelectorAll('.reveal,.reveal-l,.reveal-r').forEach(el => obs.observe(el));
+  // Reveal all .reveal / .reveal-l / .reveal-r elements on scroll
+  (function(){
+    var obs = new IntersectionObserver(function(entries) {
+      entries.forEach(function(e) {
+        if (e.isIntersecting) e.target.classList.add('visible');
+      });
+    }, { threshold: 0.08 });
+    document.querySelectorAll('.reveal, .reveal-l, .reveal-r').forEach(function(el) {
+      obs.observe(el);
+    });
+  })();
 </script>
 </body>
 </html>
